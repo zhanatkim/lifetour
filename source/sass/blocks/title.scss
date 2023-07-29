@@ -1,0 +1,21 @@
+.title {
+  padding: 0;
+  margin: 0;
+  font-weight: 800;
+  line-height: 100%;
+
+  &--large {
+    font-size: 77px;
+    color: $color-default-white;
+  }
+
+  &--medium {
+    font-size: 35px;
+    color: $color-default-black;
+  }
+
+  &--small {
+    font-size: 21px;
+    color: $color-default-black;
+  }
+}

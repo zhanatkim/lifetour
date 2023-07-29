@@ -1,0 +1,36 @@
+.video {
+  position: relative;
+}
+
+.video__button {
+  position: absolute;
+  top: calc(50% - 28px);
+  left: calc(50% - 28px);;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid $color-default-white;
+  background-color: rgba($color-default-white, 0.2);
+  color: $color-default-white;
+  cursor: pointer;
+  transition: border $trans-default, color $trans-default;
+
+  & svg {
+    position: absolute;
+    top: 15px;
+    left: 21px;
+  }
+
+  @include hover-focus {
+    outline: none;
+    border: 1px solid $color-hover-navy;
+    background-color: rgba(118, 119, 120, 0.2);
+    color: #000000;
+
+    @include active {
+      color: $color-default-white;
+      background-color: $color-hover-navy;
+    }
+  }
+
+}

@@ -1,4 +1,4 @@
-.page {
+.page-wrapper {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -6,8 +6,8 @@
   /* stylelint-disable-next-line */
   min-height: calc(100 * var(--vh, 1vh));
 
-  .page__header,
-  .page__footer {
+  .page-header,
+  .page-footer {
     flex-shrink: 0;
   }
 

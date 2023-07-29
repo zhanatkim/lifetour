@@ -1,26 +1,24 @@
-// .btn {
-//   display: inline-flex;
-//   padding: 10px 20px;
+.button {
+  font-weight: 500;
+  color: $color-default-white;
+  background-color: $color-default-blue;
+  text-align: center;
+  padding: 21px;
+  transition: background-color $trans-default;
 
-//   color: $color-default-white;
+  @include hover-focus {
+    background-color: transparent;
+    color: $color-hover-navy;
+    box-shadow: 0 0 0 1px $color-hover-navy;
 
-//   background-color: $color-neon-blue;
-//   border: none;
-//   cursor: pointer;
+    @include active {
+      background-color: $color-hover-navy;
+      color: $color-default-white;
+      box-shadow: none;
+    }
+  }
 
-//   transition: opacity $trans-default;
-
-//   &--red {
-//     background-color: $color-torch-red;
-//   }
-
-//   &:disabled {
-//     opacity: 0.5;
-
-//     pointer-events: none;
-//   }
-
-//   @include hover-focus {
-//     opacity: 0.8;
-//   }
-// }
+  &:disable {
+    background-color: rgba(2, 102, 193, 0.1);
+  }
+}
