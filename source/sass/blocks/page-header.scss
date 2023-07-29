@@ -1,0 +1,51 @@
+.page-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 calc(50% - 600px);
+  padding-top: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.page-header__top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include vp-1199 {
+
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+
+  }
+}
+
+.page-header__toggle--no-js {
+  display: none;
+}
+
+.page-header__nav {
+  position: absolute;
+  bottom: 23px;
+  left: calc(50% - 285px);
+}
+
+.page-header__phone {
+  font-size: 18px;
+  font-weight: 600;
+  color: $color-default-white;
+}

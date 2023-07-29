@@ -2,11 +2,15 @@
 import Swiper from './vendor/swiper';
 import './vendor/focus-visible-polyfill';
 
-export const heroSwiper = new Swiper('.main-header__swiper', {
-  spaceBetween: 30,
-  effect: "fade",
+export const heroSwiper = new Swiper('.swiper', {
+  cssMode: true,
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
   pagination: {
-    el: '.main-header__pagination',
+    el: '.swiper-pagination',
     clickable: true,
   },
 });

@@ -1,0 +1,54 @@
+
+.nav__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 31px;
+  flex-wrap: wrap;
+}
+
+.nav__link {
+  position: relative;
+
+  @include hover {
+    &::before {
+      content: "";
+      height: 1px;
+      background-color: $color-default-black;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -3px;
+    }
+  }
+
+  @include focus {
+    outline: 1px solid $color-default-black;
+    outline-offset: 3px;
+  }
+
+  &--dark {
+    color: $color-default-white;
+
+    @include hover {
+      &::before {
+        background-color: $color-default-white;
+      }
+    }
+
+    @include focus {
+      outline: 1px solid $color-default-white;
+      outline-offset: 3px;
+    }
+  }
+
+  @include active {
+    outline: none;
+
+    &::before {
+      display: none;
+    }
+  }
+}
