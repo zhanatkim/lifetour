@@ -10,18 +10,21 @@
   </head>
   <body>
     <div class="page-wrapper">
-      <header class="page-header">
+      <header class="page-header page-header--no-js">
         <div class="page-header__top">
           <button class="page-header__toggle page-header__toggle--no-js" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <div class="page-header__inner">
             <a class="page-header__logo" href="index.html">
-              <picture>
+              <svg width="205" height="62" fill="currentColor" aria-labelledby="title">
+                <use xlink:href="img/sprite.svg#header-logo-desktop"></use>
+              </svg>
+              <!-- <picture>
                 <source media="(min-width: 1200px)" srcset="img/svg/header-logo-desktop.svg" width="205" height="62">
-                <source media="(min-width: 768px)" srcset="img/svg/header-logo-tablet.svg" width="144" height="44">
-                <img src="img/svg/header-logo-mobile.svg" alt="Логотип Lifetour." width="112" height="34">
-              </picture>
+                <source media="(min-width: 768px)" srcset="img/svg/header-logo-tablet-black.svg" width="144" height="44">
+                <img src="img/svg/header-logo-mobile-black.svg" alt="Логотип Lifetour." width="112" height="34">
+              </picture> -->
             </a>
             <a class="page-header__phone" href="tel:88007253232">8 800 725 32 32</a>
           </div>
@@ -49,9 +52,9 @@
           </ul>
         </nav>
       </header>
-      <main>
+      <main class="main-container" data-overlay>
         <h1 class="main-header__title visually-hidden">Lifetour - организация походов в горы</h1>
-        <div class="main-header">
+        <div class="main-header main-header--no-js">
           <div class="main-header__swiper swiper">
             <div class="main-header__wrapper swiper__wrapper swiper-wrapper">
 
@@ -193,6 +196,65 @@
         <section class="contacts"></section>
       </main>
       <footer class="page-footer">
+        <div class="page-footer__top">
+          <div class="page-footer__logo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/svg/footer-logo-desktop.svg" width="205" height="60">
+              <source media="(min-width: 768px)" srcset="img/svg/footer-logo-tablet-black.svg" width="118" height="34">
+              <img src="img/svg/footer-logo-mobile-black.svg" alt="Логотип Lifetour." width="112" height="34">
+            </picture>
+          </div>
+          <ul class="page-footer__list">
+            <li>
+              <a class="page-footer__link" href="#">Туры</a>
+            </li>
+            <li>
+              <a class="page-footer__link" href="#">Обучение</a>
+            </li>
+            <li>
+              <a class="page-footer__link" href="#">О нас</a>
+            </li>
+            <li>
+              <a class="page-footer__link" href="#">Отзывы</a>
+            </li>
+            <li>
+              <a class="page-footer__link" href="#">Фотографии</a>
+            </li>
+            <li>
+              <a class="page-footer__link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <a class="page-footer__phone" href="tel:88007253232">8 800 725 32 32</a>
+        </div>
+        <div class="page-footer__bottom">
+          <ul class="page-footer__socials">
+            <li>
+              <a class="page-footer__social" href="#">
+                <svg width="16" height="9" fill="currentColor">
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+                <span class="visually-hidden">В контакте</span>
+              </a>
+            </li>
+            <li>
+              <a class="page-footer__social" href="#">
+                <svg width="9" height="16" fill="currentColor">
+                  <use xlink:href="img/sprite.svg#ok"></use>
+                </svg>
+                <span class="visually-hidden">Одноклассники</span>
+              </a>
+            </li>
+            <li>
+              <a class="page-footer__social" href="#">
+                <svg width="14" height="15" fill="currentColor">
+                  <use xlink:href="img/sprite.svg#reddit"></use>
+                </svg>
+                <span class="visually-hidden">Reddit</span>
+              </a>
+            </li>
+          </ul>
+          <p class="page-footer__text">Политика конфиденциальности</p>
+        </div>
       </footer>
     </div>
 

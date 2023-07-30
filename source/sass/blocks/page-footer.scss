@@ -1,0 +1,175 @@
+.page-footer {
+  padding: 0 calc(50% - 600px);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  border-top: 1px solid rgba($color-default-black, 0.2);
+  background-color: $color-default-white;
+
+  @include vp-1199 {
+    padding: 0 calc(50% - 339px);
+    padding-top: 44px;
+    padding-bottom: 40px;
+    gap: 37px;
+  }
+
+  @include vp-767 {
+    padding: 30px 20px;
+    gap: 30px;
+  }
+}
+
+.page-footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include vp-767 {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.page-footer__bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  @include vp-767 {
+    align-items: flex-start;
+  }
+}
+
+.page-footer__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+
+  @include vp-1199 {
+    gap: 20px;
+  }
+
+  @include vp-767 {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-flow: column;
+    column-gap: 81px;
+    row-gap: 15px;
+  }
+}
+
+.page-footer__link {
+  position: relative;
+  cursor: pointer;
+  padding: 5px 0;
+
+  @include hover {
+    &::before {
+      content: "";
+      height: 1px;
+      background-color: $color-default-black;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -3px;
+    }
+  }
+
+  @include focus {
+    outline: 1px solid $color-default-black;
+    outline-offset: 3px;
+  }
+
+  @include active {
+    outline: none;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &:disabled {
+    color: rgba($color-default-black, 0.5);
+  }
+
+  @include vp-1199 {
+    font-size: 14px;
+  }
+}
+
+
+.page-footer__phone {
+  padding: 5px 0;
+  font-size: 18px;
+  font-weight: 600;
+  transition: color $trans-default;
+
+  @include hover-focus {
+    outline: none;
+    color: $color-hover-navy;
+
+    @include active {
+      color: #0266c1;
+    }
+  }
+
+  &:disabled {
+    color: rgba($color-default-black, 0.2);
+  }
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+
+.page-footer__socials {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.page-footer__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba($color-default-black, 0.3);
+  color: $color-default-black;
+  background-color: transparent;
+  transition: background-color $trans-default;
+
+  @include hover-focus {
+    outline: none;
+    border: 1px solid $color-default-black;
+
+    @include active {
+      color: $color-default-white;
+      border: 1px solid $color-default-blue;
+      background-color: $color-default-blue;
+    }
+  }
+
+  &:disabled {
+    color: rgba($color-default-black, 0.3);
+  }
+}
+
+.page-footer__text {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 300;
+}

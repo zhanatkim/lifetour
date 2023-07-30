@@ -4,6 +4,12 @@
   position: absolute;
   top: 0;
   left: 0;
+
+  @include vp-1199 {
+    &--no-js {
+      position: static;
+    }
+  }
 }
 
 .main-header__swiper {
@@ -30,7 +36,6 @@
       background: $color-default-white;
     }
   }
-
 }
 
 .main-header__slide {

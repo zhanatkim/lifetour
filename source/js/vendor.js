@@ -4,10 +4,6 @@ import './vendor/focus-visible-polyfill';
 
 export const heroSwiper = new Swiper('.main-header__swiper', {
   cssMode: true,
-  // navigation: {
-  //   nextEl: '.swiper-button-next',
-  //   prevEl: '.swiper-button-prev',
-  // },
   pagination: {
     el: '.main-header__pagination',
     clickable: true,
