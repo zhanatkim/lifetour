@@ -3,7 +3,7 @@
   color: $color-default-white;
   background-color: $color-default-blue;
   text-align: center;
-  padding: 21px;
+  padding: 22px;
   transition: background-color $trans-default;
 
   @include hover-focus {
@@ -20,5 +20,9 @@
 
   &:disable {
     background-color: rgba(2, 102, 193, 0.1);
+  }
+
+  @include vp-767 {
+    padding: 18px;
   }
 }

@@ -3,10 +3,14 @@
   margin: 0;
   position: relative;
   bottom: 40px;
-  left: calc(50% - 600px);
+  left: calc(50% - 564px);
   width: 48.6%;
   background-color: transparent;
   transition: background-color $trans-default;
+
+  @include vp-1279 {
+    width: 55%;
+  }
 
   @include vp-1199 {
     display: none;
@@ -51,8 +55,8 @@
   }
 
   @include vp-767 {
-    padding: 99px 15px 50px;
-    gap: 22px;
+    padding: 99px 15px 48px;
+    gap: 20px;
   }
 }
 

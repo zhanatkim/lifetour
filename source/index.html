@@ -70,9 +70,11 @@
                   </picture>
                 </div>
                 <div class="main-header__inner">
-                  <h2 class="main-header__title title title--large">Захватывающие</br>вершины Кавказа</h2>
-                  <p class="main-header__description">В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через потрясающие ландшафты и&nbsp;совершите восход на&nbsp;вершину горы Чегет.</p>
-                  <a class="main-header__button button" href="#">Смотреть тур</a>
+                  <div class="main-header__text">
+                    <h2 class="main-header__title title title--large">Захватывающие</br>вершины Кавказа</h2>
+                    <p class="main-header__description">В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через потрясающие ландшафты и&nbsp;совершите восход на&nbsp;вершину горы Чегет.</p>
+                    <a class="main-header__button button" href="#">Смотреть тур</a>
+                  </div>
                   <div class="main-header__features">
                     <span class="main-header__feature">
                       <svg  width="12" height="12">
@@ -118,9 +120,11 @@
                   </picture>
                 </div>
                 <div class="main-header__inner">
-                  <h2 class="main-header__title title title--large">Невероятная</br>природа Камчатки</h2>
-                  <p class="main-header__description">Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие по&nbsp;одному из&nbsp;самых нетронутых уголков дикой природы в&nbsp;мире.</p>
-                  <a class="main-header__button button" href="#">Смотреть тур</a>
+                  <div class="main-header__text">
+                    <h2 class="main-header__title title title--large">Невероятная</br>природа Камчатки</h2>
+                    <p class="main-header__description">Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие по&nbsp;одному из&nbsp;самых нетронутых уголков дикой природы в&nbsp;мире.</p>
+                    <a class="main-header__button button" href="#">Смотреть тур</a>
+                  </div>
                   <div class="main-header__features">
                     <span class="main-header__feature">
                       <svg  width="12" height="12">
@@ -160,9 +164,11 @@
                   </picture>
                 </div>
                 <div class="main-header__inner">
-                  <h2 class="main-header__title title title--large">Магические пейзажи Алтайского Края</h2>
-                  <p class="main-header__description">Алтайский трекинг-тур&nbsp;&mdash; это захватывающее приключение с&nbsp;посещением магических и&nbsp;захватывающих дух ландшафтов Алтайских гор.</p>
-                  <a class="main-header__button button" href="#">Смотреть тур</a>
+                  <div class="main-header__text">
+                    <h2 class="main-header__title title title--large">Магические пейзажи Алтайского Края</h2>
+                    <p class="main-header__description">Алтайский трекинг-тур&nbsp;&mdash; это захватывающее приключение с&nbsp;посещением магических и&nbsp;захватывающих дух ландшафтов Алтайских гор.</p>
+                    <a class="main-header__button button" href="#">Смотреть тур</a>
+                  </div>
                   <div class="main-header__features">
                     <span class="main-header__feature">
                       <svg  width="12" height="12">
@@ -178,7 +184,60 @@
                     </span>
                   </div>
                   <div class="main-header__multimedia">
-                    <div class="main-header__podcast"></div>
+                    <div class="main-header__audio-player audio-player">
+                      <div class="audio-player__top">
+                        <p><span class="audio-player__name">Алтай</span></p>
+                        <div class="audio-player__inner">
+                          <span class="audio-player__author">Lifetour</span>
+                          <p>
+                            <svg width="17" height="17">
+                              <use xlink:href="img/sprite.svg#audio-like"></use>
+                            </svg>
+                            <svg width="17" height="17">
+                              <use xlink:href="img/sprite.svg#audio-share"></use>
+                            </svg>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="audio-player__scale">
+                        <div class="audio-player__range">
+                          <button class="audio-player__range-button" type="button"></button>
+                        </div>
+                        <p>
+                          <span>2:30</span>
+                          <span>4:16</span>
+                        </p>
+                      </div>
+                      <div class="audio-player__bottom">
+                        <svg width="25" height="25">
+                          <use xlink:href="img/sprite.svg#audio-order"></use>
+                        </svg>
+                        <div class="audio-player__buttons">
+                          <button class="audio-player__button-prev" type="button">
+                            <span class="visually-hidden">Предыдущий трек</span>
+                            <svg width="22" height="22">
+                              <use xlink:href="img/sprite.svg#audio-prev"></use>
+                            </svg>
+                          </button>
+                          <button class="audio-player__button-play">
+                            <span class="visually-hidden">Включить трек</span>
+                            <svg width="47" height="47">
+                              <use xlink:href="img/sprite.svg#audio-play"></use>
+                            </svg>
+                          </button>
+                          <button class="audio-player__button-next" type="button">
+                            <span class="visually-hidden">Следующий трек</span>
+                            <svg width="22" height="22">
+                              <use xlink:href="img/sprite.svg#audio-next"></use>
+                            </svg>
+                          </button>
+                        </div>
+                        <svg width="25" height="25">
+                          <use xlink:href="img/sprite.svg#audio-repeat"></use>
+                        </svg>
+                      </div>
+
+                    </div>
                   </div>
                 </div>
               </div>
@@ -200,8 +259,8 @@
           <div class="page-footer__logo">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/svg/footer-logo-desktop.svg" width="205" height="60">
-              <source media="(min-width: 768px)" srcset="img/svg/footer-logo-tablet-black.svg" width="118" height="34">
-              <img src="img/svg/footer-logo-mobile-black.svg" alt="Логотип Lifetour." width="112" height="34">
+              <source media="(min-width: 768px)" srcset="img/svg/footer-logo-tablet.svg" width="118" height="34">
+              <img src="img/svg/footer-logo-mobile.svg" alt="Логотип Lifetour." width="112" height="34">
             </picture>
           </div>
           <ul class="page-footer__list">
