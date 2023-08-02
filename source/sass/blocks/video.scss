@@ -1,6 +1,41 @@
 .video {
   position: relative;
   cursor: pointer;
+  width: 100%;
+  height: 100%;
+
+  &[data-is-playing="is-out"] {
+    & .video__button {
+      display: none;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      top: 0;
+      bottom: 0;
+      z-index: 2;
+    }
+  }
+
+  &[data-is-playing="is-playing"] {
+    & .video__button {
+      display: none;
+    }
+  }
+
+  & img {
+    object-fit: cover;
+    width: 100%;
+  }
+
+  & iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
 
   @include hover-focus {
     & .video__button{
@@ -16,6 +51,8 @@
     }
   }
 }
+
+
 
 .video__button {
   position: absolute;

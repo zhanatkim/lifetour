@@ -107,6 +107,11 @@
   position: absolute;
   right: calc(50% - 600px);
   top: 37.62%;
+  width: 33.47%;
+  aspect-ratio: 482 / 317;
+  height: auto;
+  display: grid;
+
 
   @include vp-1279 {
     right: 40px;
@@ -114,6 +119,8 @@
 
   @include vp-1199 {
     position: static;
+    width: 57.55%;
+    aspect-ratio: 442 / 300;
   }
 
   @include vp-767 {
@@ -202,15 +209,24 @@
 }
 
 .main-header__audio-player {
+  align-self: flex-start;
+  justify-self: flex-end;
+
   @include vp-1199 {
     margin-bottom: 110px;
+    align-self: center;
+    justify-self: center;
   }
 }
 
 .main-header__photo-cards {
   position: relative;
   top: -99px;
+  justify-self: flex-end;
+
   @include vp-1199 {
     position: static;
+    align-self: center;
+    justify-self: center;
   }
 }

@@ -1,0 +1,21 @@
+.swiper-button {
+  width: 37px;
+  height: 35px;
+  border: none;
+  background-color: $color-default-blue;
+  color: $color-default-white;
+  top: 23px;
+
+  &::after {
+    display: none;
+  }
+
+  &--next {
+    right: 0;
+  }
+
+  &--prev {
+    right: 41px;
+    left: auto;
+  }
+}

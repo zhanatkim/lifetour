@@ -1,10 +1,35 @@
 .audio-player {
+  width: 340px;
+  height: auto;
+
+  &[data-is-playing="is-out"] {
+    & .audio-player__button-play {
+      color: rgba(2, 102, 193, 0.1);
+    }
+  }
+
+  &[data-is-playing="is-playing"] {
+    & .audio-player__placeholder {
+      display: none;
+    }
+  }
+
+  & iframe {
+    width: 100%;
+    height: 100%;
+
+  }
+}
+
+.audio-player__placeholder {
+  visibility: visible;
   display: flex;
   flex-direction: column;
   padding: 42px 38px 36px;
-  width: 340px;
+  width: 100%;
   background-color: rgba(245, 246, 250, 0.9);
   border: 2px solid $color-default-white;
+  transition: visibility $trans-default;
 
   & p {
     padding: 0;
