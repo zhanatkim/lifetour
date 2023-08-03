@@ -1613,7 +1613,18 @@ button,
 }
 .title--small {
   font-size: 21px;
+  font-weight: 700;
   color: #2d383f;
+}
+@media (max-width: 1199px) {
+  .title--small {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .title--small {
+    font-size: 16px;
+  }
 }
 
 .page-header {
