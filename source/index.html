@@ -20,11 +20,6 @@
               <svg width="205" height="62" fill="currentColor" aria-labelledby="title">
                 <use xlink:href="img/sprite.svg#header-logo-desktop"></use>
               </svg>
-              <!-- <picture>
-                <source media="(min-width: 1200px)" srcset="img/svg/header-logo-desktop.svg" width="205" height="62">
-                <source media="(min-width: 768px)" srcset="img/svg/header-logo-tablet-black.svg" width="144" height="44">
-                <img src="img/svg/header-logo-mobile-black.svg" alt="Логотип Lifetour." width="112" height="34">
-              </picture> -->
             </a>
             <a class="page-header__phone" href="tel:88007253232">8 800 725 32 32</a>
           </div>
@@ -52,7 +47,7 @@
           </ul>
         </nav>
       </header>
-      <main class="main-container" data-overlay>
+      <main class="main-container">
         <h1 class="main-container__title visually-hidden">Lifetour - организация походов в горы</h1>
         <div class="main-header main-header--no-js">
           <div class="main-header__swiper swiper">
@@ -247,9 +242,8 @@
           </div>
         </div>
         <section class="tours" id="tours">
-          <h2 class="tours__title title title--medium">Ближайшие туры</h2>
-          <span class="tours__title-bg title title--bg">Ближайшие туры</span>
           <div class="tours__swiper swiper">
+            <h2 class="tours__title title title--medium">Ближайшие туры</h2>
             <div class="tours__wrapper swiper__wrapper swiper-wrapper">
               <div class="tours__tours-card swiper__slide swiper-slide tours-card">
                 <div class="tours-card__photo">
@@ -683,9 +677,384 @@
             </picture>
           </div>
         </section>
-        <section class="training"></section>
-        <section class="about"></section>
-        <section class="review"></section>
+        <section class="training">
+          <h2 class="training__title title title--medium">Обучение</h2>
+          <p class="training__text">Обучение проводится квалифицированными специалистами, за&nbsp;плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.</p>
+          <div class="training__swiper swiper">
+            <h3 class="training__subtitle title title--small">Наши инструкторы</h3>
+            <div class="training__wrapper swiper__wrapper swiper-wrapper">
+              <div class="training__trainer-card swiper__slide swiper-slide trainer-card">
+                <div class="trainer-card__wrapper">
+                  <div class="trainer-card__photo">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/photos/trainer1-desktop-1x.webp 1x, img/photos/trainer1-desktop-2x.webp 2x" width="238" height="212">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/photos/trainer1-tablet-1x.webp 1x, img/photos/trainer1-tablet-2x.webp 2x" width="176" height="212">
+                      <source type="image/webp" srcset="img/photos/trainer1-mobile-1x.webp 1x, img/photos/trainer1-mobile-2x.webp 2x" width="250" height="212">
+                      <source media="(min-width: 1200px)" srcset="img/photos/trainer1-desktop-1x.jpg 1x, img/photos/trainer1-desktop-2x.jpg 2x" width="238" height="212">
+                      <source media="(min-width: 768px)" srcset="img/photos/trainer1-tablet-1x.jpg 1x, img/photos/trainer1-tablet-2x.jpg 2x" width="176" height="212">
+                      <img src="img/photos/trainer1-mobile-1x.jpg" srcset="img/photos/trainer1-mobile-2x.jpg 2x" alt="Инструктор по подготовке." width="250" height="212">
+                    </picture>
+                  </div>
+                  <div class="trainer-card__inner">
+                    <h4 class="trainer-card__name">Александр Прокофьев</h4>
+                    <a class="trainer-card__social social" href="#">
+                      <span class="visually-hidden">Страница инструктора В Контакте</span>
+                      <svg width="14" height="8">
+                        <use xlink:href="img/sprite.svg#trainers-vk"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <p class="trainer-card__description">Строгий и&nbsp;внимательный инструктор, веселый и&nbsp;общительный человек. Любит природу.</p>
+                </div>
+              </div>
+
+              <div class="training__trainer-card swiper__slide swiper-slide trainer-card">
+                <div class="trainer-card__wrapper">
+                  <div class="trainer-card__photo">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/photos/trainer2-desktop-1x.webp 1x, img/photos/trainer2-desktop-2x.webp 2x" width="238" height="212">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/photos/trainer2-tablet-1x.webp 1x, img/photos/trainer2-tablet-2x.webp 2x" width="176" height="212">
+                      <source type="image/webp" srcset="img/photos/trainer2-mobile-1x.webp 1x, img/photos/trainer2-mobile-2x.webp 2x" width="250" height="212">
+                      <source media="(min-width: 1200px)" srcset="img/photos/trainer2-desktop-1x.jpg 1x, img/photos/trainer2-desktop-2x.jpg 2x" width="238" height="212">
+                      <source media="(min-width: 768px)" srcset="img/photos/trainer2-tablet-1x.jpg 1x, img/photos/trainer2-tablet-2x.jpg 2x" width="176" height="212">
+                      <img src="img/photos/trainer2-mobile-1x.jpg" srcset="img/photos/trainer2-mobile-2x.jpg 2x" alt="Инструктор по подготовке." width="250" height="212">
+                    </picture>
+                  </div>
+                  <div class="trainer-card__inner">
+                    <h4 class="trainer-card__name">Светлана Афиногенова</h4>
+                    <a class="trainer-card__social social" href="#">
+                      <span class="visually-hidden">Страница инструктора В Контакте</span>
+                      <svg width="14" height="8">
+                        <use xlink:href="img/sprite.svg#trainers-vk"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <p class="trainer-card__description">Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать&nbsp;&mdash; в&nbsp;этом назначение жизни.</p>
+                </div>
+              </div>
+
+              <div class="training__trainer-card swiper__slide swiper-slide trainer-card">
+                <div class="trainer-card__wrapper">
+                  <div class="trainer-card__photo">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/photos/trainer3-desktop-1x.webp 1x, img/photos/trainer3-desktop-2x.webp 2x" width="238" height="212">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/photos/trainer3-tablet-1x.webp 1x, img/photos/trainer3-tablet-2x.webp 2x" width="176" height="212">
+                      <source type="image/webp" srcset="img/photos/trainer3-mobile-1x.webp 1x, img/photos/trainer3-mobile-2x.webp 2x" width="250" height="212">
+                      <source media="(min-width: 1200px)" srcset="img/photos/trainer3-desktop-1x.jpg 1x, img/photos/trainer3-desktop-2x.jpg 2x" width="238" height="212">
+                      <source media="(min-width: 768px)" srcset="img/photos/trainer3-tablet-1x.jpg 1x, img/photos/trainer3-tablet-2x.jpg 2x" width="176" height="212">
+                      <img src="img/photos/trainer3-mobile-1x.jpg" srcset="img/photos/trainer3-mobile-2x.jpg 2x" alt="Инструктор по подготовке." width="250" height="212">
+                    </picture>
+                  </div>
+                  <div class="trainer-card__inner">
+                    <h4 class="trainer-card__name">Надежда Колесниченко</h4>
+                    <a class="trainer-card__social social" href="#">
+                      <span class="visually-hidden">Страница инструктора В Контакте</span>
+                      <svg width="14" height="8">
+                        <use xlink:href="img/sprite.svg#trainers-vk"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <p class="trainer-card__description">Участники говорят, что Надежда ответственная, приятная в&nbsp;общении, и&nbsp;в&nbsp;поездках с&nbsp;ней чувствуешь себя спокойно и&nbsp;уверенно.</p>
+                </div>
+              </div>
+
+              <div class="training__trainer-card swiper__slide swiper-slide trainer-card">
+                <div class="trainer-card__wrapper">
+                  <div class="trainer-card__photo">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/photos/trainer4-desktop-1x.webp 1x, img/photos/trainer4-desktop-2x.webp 2x" width="238" height="212">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/photos/trainer4-tablet-1x.webp 1x, img/photos/trainer4-tablet-2x.webp 2x" width="176" height="212">
+                      <source type="image/webp" srcset="img/photos/trainer4-mobile-1x.webp 1x, img/photos/trainer4-mobile-2x.webp 2x" width="250" height="212">
+                      <source media="(min-width: 1200px)" srcset="img/photos/trainer4-desktop-1x.jpg 1x, img/photos/trainer4-desktop-2x.jpg 2x" width="238" height="212">
+                      <source media="(min-width: 768px)" srcset="img/photos/trainer4-tablet-1x.jpg 1x, img/photos/trainer4-tablet-2x.jpg 2x" width="176" height="212">
+                      <img src="img/photos/trainer4-mobile-1x.jpg" srcset="img/photos/trainer4-mobile-2x.jpg 2x" alt="Инструктор по подготовке." width="250" height="212">
+                    </picture>
+                  </div>
+                  <div class="trainer-card__inner">
+                    <h4 class="trainer-card__name">Федор Кайгородов</h4>
+                    <a class="trainer-card__social social" href="#">
+                      <span class="visually-hidden">Страница инструктора В Контакте</span>
+                      <svg width="14" height="8">
+                        <use xlink:href="img/sprite.svg#trainers-vk"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <p class="trainer-card__description">Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года. В&nbsp;России побывал в&nbsp;горных районах Хибины, Архыз, много путешествует по&nbsp;Европе.</p>
+                </div>
+              </div>
+
+              <div class="training__trainer-card swiper__slide swiper-slide trainer-card">
+                <div class="trainer-card__wrapper">
+                  <div class="trainer-card__photo">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/photos/trainer1-desktop-1x.webp 1x, img/photos/trainer1-desktop-2x.webp 2x" width="238" height="212">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/photos/trainer1-tablet-1x.webp 1x, img/photos/trainer1-tablet-2x.webp 2x" width="176" height="212">
+                      <source type="image/webp" srcset="img/photos/trainer1-mobile-1x.webp 1x, img/photos/trainer1-mobile-2x.webp 2x" width="250" height="212">
+                      <source media="(min-width: 1200px)" srcset="img/photos/trainer1-desktop-1x.jpg 1x, img/photos/trainer1-desktop-2x.jpg 2x" width="238" height="212">
+                      <source media="(min-width: 768px)" srcset="img/photos/trainer1-tablet-1x.jpg 1x, img/photos/trainer1-tablet-2x.jpg 2x" width="176" height="212">
+                      <img src="img/photos/trainer1-mobile-1x.jpg" srcset="img/photos/trainer1-mobile-2x.jpg 2x" alt="Инструктор по подготовке." width="250" height="212">
+                    </picture>
+                  </div>
+                  <div class="trainer-card__inner">
+                    <h4 class="trainer-card__name">Александр Прокофьев</h4>
+                    <a class="trainer-card__social social" href="#">
+                      <span class="visually-hidden">Страница инструктора В Контакте</span>
+                      <svg width="14" height="8">
+                        <use xlink:href="img/sprite.svg#trainers-vk"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <p class="trainer-card__description">Строгий и&nbsp;внимательный инструктор, веселый и&nbsp;общительный человек. Любит природу.</p>
+                </div>
+              </div>
+
+              <div class="training__trainer-card swiper__slide swiper-slide trainer-card">
+                <div class="trainer-card__wrapper">
+                  <div class="trainer-card__photo">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/photos/trainer2-desktop-1x.webp 1x, img/photos/trainer2-desktop-2x.webp 2x" width="238" height="212">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/photos/trainer2-tablet-1x.webp 1x, img/photos/trainer2-tablet-2x.webp 2x" width="176" height="212">
+                      <source type="image/webp" srcset="img/photos/trainer2-mobile-1x.webp 1x, img/photos/trainer2-mobile-2x.webp 2x" width="250" height="212">
+                      <source media="(min-width: 1200px)" srcset="img/photos/trainer2-desktop-1x.jpg 1x, img/photos/trainer2-desktop-2x.jpg 2x" width="238" height="212">
+                      <source media="(min-width: 768px)" srcset="img/photos/trainer2-tablet-1x.jpg 1x, img/photos/trainer2-tablet-2x.jpg 2x" width="176" height="212">
+                      <img src="img/photos/trainer2-mobile-1x.jpg" srcset="img/photos/trainer2-mobile-2x.jpg 2x" alt="Инструктор по подготовке." width="250" height="212">
+                    </picture>
+                  </div>
+                  <div class="trainer-card__inner">
+                    <h4 class="trainer-card__name">Светлана Афиногенова</h4>
+                    <a class="trainer-card__social social" href="#">
+                      <span class="visually-hidden">Страница инструктора В Контакте</span>
+                      <svg width="14" height="8">
+                        <use xlink:href="img/sprite.svg#trainers-vk"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <p class="trainer-card__description">Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать&nbsp;&mdash; в&nbsp;этом назначение жизни.</p>
+                </div>
+              </div>
+
+              <div class="training__trainer-card swiper__slide swiper-slide trainer-card">
+                <div class="trainer-card__wrapper">
+                  <div class="trainer-card__photo">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/photos/trainer3-desktop-1x.webp 1x, img/photos/trainer3-desktop-2x.webp 2x" width="238" height="212">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/photos/trainer3-tablet-1x.webp 1x, img/photos/trainer3-tablet-2x.webp 2x" width="176" height="212">
+                      <source type="image/webp" srcset="img/photos/trainer3-mobile-1x.webp 1x, img/photos/trainer3-mobile-2x.webp 2x" width="250" height="212">
+                      <source media="(min-width: 1200px)" srcset="img/photos/trainer3-desktop-1x.jpg 1x, img/photos/trainer3-desktop-2x.jpg 2x" width="238" height="212">
+                      <source media="(min-width: 768px)" srcset="img/photos/trainer3-tablet-1x.jpg 1x, img/photos/trainer3-tablet-2x.jpg 2x" width="176" height="212">
+                      <img src="img/photos/trainer3-mobile-1x.jpg" srcset="img/photos/trainer3-mobile-2x.jpg 2x" alt="Инструктор по подготовке." width="250" height="212">
+                    </picture>
+                  </div>
+                  <div class="trainer-card__inner">
+                    <h4 class="trainer-card__name">Надежда Колесниченко</h4>
+                    <a class="trainer-card__social social" href="#">
+                      <span class="visually-hidden">Страница инструктора В Контакте</span>
+                      <svg width="14" height="8">
+                        <use xlink:href="img/sprite.svg#trainers-vk"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <p class="trainer-card__description">Участники говорят, что Надежда ответственная, приятная в&nbsp;общении, и&nbsp;в&nbsp;поездках с&nbsp;ней чувствуешь себя спокойно и&nbsp;уверенно.</p>
+                </div>
+              </div>
+
+              <div class="training__trainer-card swiper__slide swiper-slide trainer-card">
+                <div class="trainer-card__wrapper">
+                  <div class="trainer-card__photo">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/photos/trainer4-desktop-1x.webp 1x, img/photos/trainer4-desktop-2x.webp 2x" width="238" height="212">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/photos/trainer4-tablet-1x.webp 1x, img/photos/trainer4-tablet-2x.webp 2x" width="176" height="212">
+                      <source type="image/webp" srcset="img/photos/trainer4-mobile-1x.webp 1x, img/photos/trainer4-mobile-2x.webp 2x" width="250" height="212">
+                      <source media="(min-width: 1200px)" srcset="img/photos/trainer4-desktop-1x.jpg 1x, img/photos/trainer4-desktop-2x.jpg 2x" width="238" height="212">
+                      <source media="(min-width: 768px)" srcset="img/photos/trainer4-tablet-1x.jpg 1x, img/photos/trainer4-tablet-2x.jpg 2x" width="176" height="212">
+                      <img src="img/photos/trainer4-mobile-1x.jpg" srcset="img/photos/trainer4-mobile-2x.jpg 2x" alt="Инструктор по подготовке." width="250" height="212">
+                    </picture>
+                  </div>
+                  <div class="trainer-card__inner">
+                    <h4 class="trainer-card__name">Федор Кайгородов</h4>
+                    <a class="trainer-card__social social" href="#">
+                      <span class="visually-hidden">Страница инструктора В Контакте</span>
+                      <svg width="14" height="8">
+                        <use xlink:href="img/sprite.svg#trainers-vk"></use>
+                      </svg>
+                    </a>
+                  </div>
+                  <p class="trainer-card__description">Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года. В&nbsp;России побывал в&nbsp;горных районах Хибины, Архыз, много путешествует по&nbsp;Европе.</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="training__button training__button--prev swiper-button swiper-button--prev swiper-button-prev">
+              <span class="visually-hidden">Предыдущий слайд</span>
+              <svg width="14" height="8" fill="currentColor">
+                <use xlink:href="img/sprite.svg#slider-button-prev"></use>
+              </svg>
+            </div>
+            <div class="training__button training__button--next swiper-button swiper-button--next swiper-button-next">
+              <span class="visually-hidden">Предыдущий слайд</span>
+              <svg width="14" height="8" fill="currentColor">
+                <use xlink:href="img/sprite.svg#slider-button-next"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="training__route training-route">
+            <h3 class="training-route__title title title--small">Процесс обучения</h3>
+            <div class="training-route__wrapper">
+              <ul class="training-route__list">
+                <li>
+                  <div class="training-route__card">
+                    <svg width="25" height="25">
+                      <use xlink:href="img/sprite.svg#training-icon-1"></use>
+                    </svg>
+                    <p>Изучение спортивного туристского движения</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="training-route__card">
+                    <svg width="25" height="25">
+                      <use xlink:href="img/sprite.svg#training-icon-2"></use>
+                    </svg>
+                    <p>Подготовка и&nbsp;техническое снаряжение в&nbsp;походах</p>
+                  </div>
+                </li>
+              </ul>
+              <ul class="training-route__list">
+                <li>
+                  <div class="training-route__card">
+                    <svg width="25" height="25">
+                      <use xlink:href="img/sprite.svg#training-icon-3"></use>
+                    </svg>
+                    <p>Лекции по&nbsp;окружающей среде, экологии и&nbsp;гигиене</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="training-route__card">
+                    <svg width="25" height="25">
+                      <use xlink:href="img/sprite.svg#training-icon-4"></use>
+                    </svg>
+                    <p>Разъяснение сложности горных препятствий</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="about">
+          <div class="about__image">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photos/about-clouds1-desktop-2x.webp 2x, img/photos/about-clouds1-desktop-1x.webp 1x" width="808" height="474">
+              <source type="image/webp" srcset="img/photos/about-clouds1-tablet-2x.webp 2x, img/photos/about-clouds1-tablet-1x.webp 1x" width="685" height="402">
+              <source media="(min-width: 1200px)" srcset="img/photos/about-clouds1-desktop-2x.jpg 2x, img/photos/about-clouds1-desktop-1x.jpg 1x" width="808" height="474">
+              <img src="img/photos/about-clouds1-mobile-1x.jpg" srcset="img/photos/about-clouds1-mobile-2x.jpg 2x" width="685" height="402" alt="Группа треккеров спускаются к озеру.">
+            </picture>
+          </div>
+          <div class="about__bg-image">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photos/about-clouds2-desktop-2x.webp 2x, img/photos/about-clouds2-desktop-1x.webp 1x" width="840" height="280">
+              <img media="(min-width: 1200px)" src="img/photos/about-clouds2-desktop-1x.jpg" srcset="img/photos/about-clouds2-desktop-2x.jpg 2x" width="840" height="280" alt="Облака.">
+            </picture>
+          </div>
+          <h2 class="about__title title title--medium">О нас</h2>
+          <div class="about__wrapper">
+            <div class="about__inner">
+              <h3 class="about__subtitle title title--small">История компании</h3>
+              <p>В&nbsp;далеком 2000 году мы&nbsp;начали заниматься туризмом&nbsp;&mdash; походы, поездки, восхождения, нам это настолько понравилось, что мы&nbsp;этим стали жить. Спустя 5&nbsp;лет, в&nbsp;2005 году мы&nbsp;основали компанию, чтобы показывать людям удивительные места нашей страны.
+              </p>
+            </div>
+            <div class="about__inner">
+              <h3 class="about__subtitle title title--small">Наша цель</h3>
+              <p>Подарить вам незабываемые впечатления от&nbsp;похода в&nbsp;горы. Мы&nbsp;берем на&nbsp;себя все организационные вопросы. При организации мы&nbsp;обязательно учтем все ваши пожелания. Вам останется только наслаждаться незабываемым приключением в&nbsp;приятной компании.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="review">
+          <div class="review__swiper swiper">
+            <h2 class="review__title title title--medium">Отзывы</h3>
+            <div class="review__wrapper swiper__wrapper swiper-wrapper">
+
+              <div class="review__slide swiper__slide swiper-slide trainer-card">
+                <div class="review__inner">
+                  <div class="review__photo">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/photos/review1-desktop-1x.webp 1x, img/photos/review1-desktop-2x.webp 2x" width="258" height="253">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/photos/review1-tablet-1x.webp 1x, img/photos/review1-tablet-2x.webp 2x" width="186" height="237">
+                      <source type="image/webp" srcset="img/photos/review1-mobile-1x.webp 1x, img/photos/review1-mobile-2x.webp 2x" width="250" height="169">
+                      <source media="(min-width: 1200px)" srcset="img/photos/review1-desktop-1x.jpg 1x, img/photos/review1-desktop-2x.jpg 2x" width="258" height="253">
+                      <source media="(min-width: 768px)" srcset="img/photos/review1-tablet-1x.jpg 1x, img/photos/review1-tablet-2x.jpg 2x" width="186" height="237">
+                      <img src="img/photos/review1-mobile-1x.jpg" srcset="img/photos/review1-mobile-2x.jpg 2x" alt="Александр Прокофьев." width="250" height="169">
+                    </picture>
+                  </div>
+                  <div class="review__text">
+                    <div class="review__comment">
+                      <p>Осенью ходили в&nbsp;поход на&nbsp;Алтай с&nbsp;друзьями. Впечатления потрясающие! Инструкторы&nbsp;&mdash;
+                        настоящие эксперты&nbsp;&mdash; всему научили, все показали.
+                        Делились увлекательными историями о&nbsp;местах, людях, культуре места.
+                      </p>
+                      <p>С&nbsp;уверенностью могу сказать, что жизнь разделилась на&nbsp;до&nbsp;этого и&nbsp;после.
+                        Еще никогда не&nbsp;отдыхал так душой и&nbsp;телом.
+                        Всем очень рекомендую!
+                      </p>
+                    </div>
+                    <div class="review__author">
+                      <span class="review__name">Александр Прокофьев</span>
+                      <span class="review__description">38 лет, Москва</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="review__slide swiper__slide swiper-slide trainer-card">
+                <div class="review__inner">
+                  <div class="review__photo">
+                    <picture>
+                      <source type="image/webp" media="(min-width: 1200px)" srcset="img/photos/review2-desktop-1x.webp 1x, img/photos/review2-desktop-2x.webp 2x" width="258" height="253">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/photos/review2-tablet-1x.webp 1x, img/photos/review2-tablet-2x.webp 2x" width="186" height="237">
+                      <source type="image/webp" srcset="img/photos/review2-mobile-1x.webp 1x, img/photos/review2-mobile-2x.webp 2x" width="250" height="169">
+                      <source media="(min-width: 1200px)" srcset="img/photos/review2-desktop-1x.jpg 1x, img/photos/review2-desktop-2x.jpg 2x" width="258" height="253">
+                      <source media="(min-width: 768px)" srcset="img/photos/review2-tablet-1x.jpg 1x, img/photos/review2-tablet-2x.jpg 2x" width="186" height="237">
+                      <img src="img/photos/review2-mobile-1x.jpg" srcset="img/photos/review2-mobile-2x.jpg 2x" alt="Иван Соловьев." width="250" height="169">
+                    </picture>
+                  </div>
+                  <div class="review__text">
+                    <div class="review__comment">
+                      <p>Хороший полноценный поход с&nbsp;разнообразными локациями. В&nbsp;начале дорога идет по&nbsp;лыжне,
+                        далее прошли мимо полигона, по&nbsp;болотам, у&nbsp;озер и&nbsp;лесных ручьев, остатков дач конца 19&nbsp;века.
+                        Было очень интересно!
+                      </p>
+                      <p>Инструктор Федор дружелюбный, внимательный к&nbsp;технике безопасности и&nbsp;своим туристам.
+                        Всем советую этот тур.
+                      </p>
+                    </div>
+                    <div class="review__author">
+                      <span class="review__name">Иван Соловьев</span>
+                      <span class="review__description">25 лет, Владивосток</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="review__button review__button--prev swiper-button swiper-button--prev swiper-button-prev">
+              <span class="visually-hidden">Предыдущий слайд</span>
+              <svg width="14" height="8" fill="currentColor">
+                <use xlink:href="img/sprite.svg#slider-button-prev"></use>
+              </svg>
+            </div>
+            <div class="review__button review__button--next swiper-button swiper-button--next swiper-button-next">
+              <span class="visually-hidden">Предыдущий слайд</span>
+              <svg width="14" height="8" fill="currentColor">
+                <use xlink:href="img/sprite.svg#slider-button-next"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="review__bg-image">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photos/review-clouds-2x.webp 2x, img/photos/review-clouds-1x.webp 1x" width="1170" height="391">
+              <img media="(min-width: 1200px)" src="img/photos/review-clouds-1x.jpg" srcset="img/photos/review-clouds-2x.jpg 2x" width="1170" height="391" alt="Облака.">
+            </picture>
+          </div>
+        </section>
         <section class="advantages"></section>
         <section class="gallery"></section>
         <section class="form"></section>
@@ -725,7 +1094,7 @@
         <div class="page-footer__bottom">
           <ul class="page-footer__socials">
             <li>
-              <a class="page-footer__social" href="#">
+              <a class="page-footer__social social" href="#">
                 <svg width="16" height="9" fill="currentColor">
                   <use xlink:href="img/sprite.svg#vk"></use>
                 </svg>
@@ -733,7 +1102,7 @@
               </a>
             </li>
             <li>
-              <a class="page-footer__social" href="#">
+              <a class="page-footer__social social" href="#">
                 <svg width="9" height="16" fill="currentColor">
                   <use xlink:href="img/sprite.svg#ok"></use>
                 </svg>
@@ -741,7 +1110,7 @@
               </a>
             </li>
             <li>
-              <a class="page-footer__social" href="#">
+              <a class="page-footer__social social" href="#">
                 <svg width="14" height="15" fill="currentColor">
                   <use xlink:href="img/sprite.svg#reddit"></use>
                 </svg>

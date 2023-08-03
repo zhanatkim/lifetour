@@ -1,0 +1,182 @@
+.review {
+  position: relative;
+  padding-left: calc(50% - 600px);
+
+  @include vp-1279 {
+    padding-left: 40px;
+  }
+
+  @include vp-1199 {
+    padding-left: calc(50% - 339px);
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
+}
+
+.review__title {
+  &::after {
+    content: "Отзывы";
+  }
+}
+
+.review__swiper {
+  width: 100%;
+  padding-top: 115px;
+
+  @include vp-1199 {
+    padding-top: 70px;
+  }
+
+  @include vp-767 {
+    padding-top: 125px;
+  }
+}
+
+.review__wrapper {
+  padding-top: 30px;
+}
+
+.review__slide {
+  width: 790px;
+
+  @include vp-1199 {
+    width: 560px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.review__button {
+  top: calc(115px + 23px);
+
+  &--next {
+    right: 120px;
+
+    @include vp-1199 {
+      right: 45px;
+    }
+
+    @include vp-767 {
+      right: 15px;
+    }
+  }
+
+  &--prev {
+    right: 161px;
+
+    @include vp-1199 {
+      right: 86px;
+    }
+
+    @include vp-767 {
+      right: 56px;
+    }
+  }
+
+  @include vp-1199 {
+    top: calc(70px + 23px);
+  }
+
+  @include vp-767 {
+    top: calc(125px + 23px);
+  }
+}
+
+.review__inner {
+  margin: 10px;
+  padding: 20px;
+  background: $color-default-white;
+  box-shadow: 0 0 10px 0 rgba(28, 51, 116, 0.1);
+  display: grid;
+  grid-template-columns: 258px 1fr;
+  gap: 30px;
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.review__photo {
+  width: 100%;
+  height: auto;
+
+  & img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.review__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  & p {
+    padding: 0;
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 14px;
+    line-height: 22px;
+
+    @include vp-1199 {
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    @include vp-767 {
+    }
+  }
+
+  // @include vp-1199 {
+  //   width: 294px;
+  // }
+
+  // @include vp-767 {
+  //   width: 100%;
+  // }
+}
+
+.review__author {
+  display: flex;
+  flex-direction: column;
+}
+
+.review__name {
+  padding-top: 12px;
+  font-size: 13px;
+  font-weight: 700;
+
+  @include vp-1199 {
+    font-size: 12px;
+  }
+}
+
+.review__description {
+  padding-top: 8px;
+  font-size: 12px;
+
+  @include vp-1199 {
+    padding-top: 6px;
+  }
+
+  @include vp-767 {
+    padding-top: 8px;
+  }
+}
+
+.review__bg-image {
+  position: absolute;
+  z-index: -1;
+  top: 25%;
+  left: 0;
+
+  @include vp-1199 {
+    display: none;
+  }
+}
+

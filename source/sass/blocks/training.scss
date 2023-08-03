@@ -1,0 +1,138 @@
+.training {
+  position: relative;
+  padding-top: 111px;
+
+  @include vp-1199 {
+    padding-top: 75px;
+  }
+
+  @include vp-767 {
+    padding-top: 56px;
+  }
+}
+
+.training__title,
+.training__title-bg,
+.training__text,
+.training__subtitle {
+  padding: 0 calc(50% - 600px);
+
+  @include vp-1279 {
+    padding: 0 40px 0;
+  }
+
+  @include vp-1199 {
+    padding: 0 calc(50% - 339px);
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
+}
+
+.training__title {
+  &::after {
+    content: "Обучение";
+    left: calc(50% - 600px);
+
+    @include vp-1279 {
+      left: 40px;
+    }
+
+    @include vp-1199 {
+      left: calc(50% - 339px);
+    }
+
+    @include vp-767 {
+      left: 15px;
+    }
+  }
+}
+
+.training__text {
+  margin: 0;
+  max-width: 74%;
+  padding-top: 38px;
+  line-height: 24px;
+
+  @include vp-1199 {
+    padding-top: 26px;
+    max-width: 90%;
+  }
+
+  @include vp-767 {
+    max-width: 100%;
+    padding-top: 18px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.training__swiper {
+  padding: 0 calc(50% - 610px);
+  padding-top: 52px;
+  padding-bottom: 39px;
+
+  @include vp-1279 {
+    padding: 52px 30px 39px;
+  }
+
+  @include vp-1199 {
+    padding: 0 calc(50% - 349px);
+    padding-top: 62px;
+    padding-bottom: 41px;
+  }
+
+  @include vp-767 {
+    padding: 47px 5px 37px;
+  }
+}
+
+.training__subtitle {
+  padding-left: 10px;
+  padding-bottom: 44px;
+  display: grid;
+  grid-template-columns: 1fr 78px;
+
+  @include vp-1199 {
+    padding-bottom: 34px;
+  }
+}
+
+.training__button {
+  &--next {
+    right: calc(50% - 600px);
+
+    @include vp-1279 {
+      right: 40px;
+    }
+
+    @include vp-1199 {
+      right: calc(50% - 339px);
+      top: 78px;
+    }
+
+    @include vp-767 {
+      top: 60px;
+      right: 15px;
+    }
+  }
+
+  &--prev {
+    right: calc(50% - 600px + 41px);
+
+    @include vp-1279 {
+      right: 81px;
+    }
+
+    @include vp-1199 {
+      top: 78px;
+      right: calc(50% - 339px  + 41px);
+    }
+
+    @include vp-767 {
+      top: 60px;
+      right: 56px;
+    }
+  }
+}

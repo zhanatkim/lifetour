@@ -4,8 +4,6 @@
   flex-direction: column;
   width: 100%;
   padding: 0 calc(50% - 600px);
-  padding-top: calc(123px - 31px);
-  padding-bottom: 100px;
 
   @include vp-1279 {
     padding-left: 40px;
@@ -15,59 +13,69 @@
   @include vp-1199 {
     padding: 0 calc(50% - 339px);
     padding-top: calc(83px - 17px);
-    padding-bottom: 70px;
+
   }
 
   @include vp-767 {
-    padding: calc(69px - 19px) 15px 60px;
+    padding: 0 15px;
   }
 }
 
 .tours__title {
   display: grid;
   grid-template-columns: 1fr 78px;
-  position: relative;
-  top: 31px;
 
-  @include vp-1199 {
-    top: 17px;
-  }
 
-  @include vp-767 {
-  top: 19px;
+  &::after {
+    content: "Ближайшие туры";
   }
 }
 
-.tours__title-bg {
-  top: 100px;
+.tours__wrapper {
+  padding-top: 58px;
 
   @include vp-1199 {
-    top: 70px;
+    padding-top: 46px;
   }
 
   @include vp-767 {
-  top: 60px;
+    padding-top: 28px;
   }
+
 }
 
 .tours__swiper {
+  position: relative;
   width: 100%;
-  padding-top: 89px;
-  padding-bottom: 52px;
+  padding-top: 119px;
+  padding-bottom: 42px;
 
   @include vp-1199 {
-    padding-top: 73px;
-    padding-bottom: 50px;
+    padding-top: 85px;
+    padding-bottom: 40px;
   }
 
   @include vp-767 {
-    padding-top: 69px;
-    padding-bottom: 29px;
+    padding-top: 66px;
+    padding-bottom: 19px;
+  }
+}
+
+.tours__button {
+  top: 146px;
+
+  @include vp-1199 {
+    top: 106px;
+  }
+
+  @include vp-767 {
+    top: 92px;
   }
 }
 
 .tours__link {
   width: fit-content;
+  padding: 10px 0;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.04em;

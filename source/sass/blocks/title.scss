@@ -20,6 +20,27 @@
   &--medium {
     font-size: 35px;
     color: $color-default-black;
+    position: relative;
+
+    &::after {
+      content: "";
+      top: auto;
+      left: 0;
+      bottom: 5px;
+      font-size: 55px;
+      color: rgba($color-default-black, 0.03);
+      position: absolute;
+      z-index: -1;
+
+      @include vp-1199 {
+        font-size: 40px;
+        bottom: 0;
+      }
+
+      @include vp-767 {
+        font-size: 26px;
+      }
+    }
 
     @include vp-1199 {
       font-size: 25px;
@@ -30,23 +51,17 @@
     }
   }
 
-  &--bg {
-    font-size: 55px;
-    color: rgba($color-default-black, 0.03);
-    position: absolute;
-    z-index: -1;
+  &--small {
+    font-size: 21px;
+    font-weight: 700;
+    color: $color-default-black;
 
     @include vp-1199 {
-      font-size: 40px;
+      font-size: 18px;
     }
 
     @include vp-767 {
-      font-size: 26px;
+      font-size: 16px;
     }
-  }
-
-  &--small {
-    font-size: 21px;
-    color: $color-default-black;
   }
 }
