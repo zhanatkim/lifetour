@@ -12,8 +12,6 @@
 
   @include vp-1199 {
     padding: 0 calc(50% - 339px);
-    padding-top: calc(83px - 17px);
-
   }
 
   @include vp-767 {
@@ -25,17 +23,21 @@
   display: grid;
   grid-template-columns: 1fr 78px;
 
-
   &::after {
     content: "Ближайшие туры";
+  }
+
+  @include vp-1199 {
+
   }
 }
 
 .tours__wrapper {
-  padding-top: 58px;
+  padding-top: 54px;
 
   @include vp-1199 {
-    padding-top: 46px;
+    padding: 0 7px;
+    padding-top: 42px;
   }
 
   @include vp-767 {
@@ -47,12 +49,12 @@
 .tours__swiper {
   position: relative;
   width: 100%;
-  padding-top: 119px;
-  padding-bottom: 42px;
+  padding-top: 123px;
+  padding-bottom: 43px;
 
   @include vp-1199 {
-    padding-top: 85px;
-    padding-bottom: 40px;
+    padding-top: 88px;
+    padding-bottom: 34px;
   }
 
   @include vp-767 {
@@ -110,7 +112,7 @@
 .tours__bg-hills {
   width: 1431px;
   height: 1424px;
-  top: -8px;
+  top: -20px;
   left: 58.2%;
 
   @include vp-1199 {

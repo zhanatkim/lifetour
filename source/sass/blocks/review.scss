@@ -1,13 +1,13 @@
 .review {
   position: relative;
-  padding-left: calc(50% - 600px);
+  padding-left: calc(50% - 610px);
 
   @include vp-1279 {
     padding-left: 40px;
   }
 
   @include vp-1199 {
-    padding-left: calc(50% - 339px);
+    padding-left: calc(50% - 349px);
   }
 
   @include vp-767 {
@@ -16,17 +16,22 @@
 }
 
 .review__title {
+  padding-left: 10px;
   &::after {
     content: "Отзывы";
   }
+
+  // @include vp-1199 {
+  //   padding-left: 0;
+  // }
 }
 
 .review__swiper {
   width: 100%;
-  padding-top: 115px;
+  padding-top: 120px;
 
   @include vp-1199 {
-    padding-top: 70px;
+    padding-top: 90px;
   }
 
   @include vp-767 {
@@ -35,23 +40,11 @@
 }
 
 .review__wrapper {
-  padding-top: 30px;
-}
-
-.review__slide {
-  width: 790px;
-
-  @include vp-1199 {
-    width: 560px;
-  }
-
-  @include vp-767 {
-    width: 100%;
-  }
+  padding-top: 17px;
 }
 
 .review__button {
-  top: calc(115px + 23px);
+  top: 129px;
 
   &--next {
     right: 120px;
@@ -78,11 +71,23 @@
   }
 
   @include vp-1199 {
-    top: calc(70px + 23px);
+    top: 95px;
   }
 
   @include vp-767 {
     top: calc(125px + 23px);
+  }
+}
+
+.review__slide {
+  max-width: 810px;
+
+  @include vp-1199 {
+    max-width: 580px;
+  }
+
+  @include vp-767 {
+    max-width: 100%;
   }
 }
 
@@ -95,6 +100,10 @@
   grid-template-columns: 258px 1fr;
   gap: 30px;
 
+  @include vp-1199 {
+    grid-template-columns: 186px 1fr;
+  }
+
   @include vp-767 {
     grid-template-columns: 1fr;
   }
@@ -106,8 +115,12 @@
 
   & img {
     object-fit: cover;
-    width: 100%;
+    max-width: 100%;
     height: auto;
+
+    @include vp-767 {
+      width: 100%;
+    }
   }
 }
 
@@ -115,6 +128,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 14px 0;
 
   & p {
     padding: 0;
@@ -132,13 +146,13 @@
     }
   }
 
-  // @include vp-1199 {
-  //   width: 294px;
-  // }
+  @include vp-1199 {
+    padding: 0;
+  }
 
-  // @include vp-767 {
-  //   width: 100%;
-  // }
+  @include vp-767 {
+    width: 100%;
+  }
 }
 
 .review__author {
@@ -172,8 +186,13 @@
 .review__bg-image {
   position: absolute;
   z-index: -1;
-  top: 25%;
+  top: 76%;
   left: 0;
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
 
   @include vp-1199 {
     display: none;

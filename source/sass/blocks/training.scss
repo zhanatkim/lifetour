@@ -1,6 +1,6 @@
 .training {
   position: relative;
-  padding-top: 111px;
+  padding-top: 113px;
 
   @include vp-1199 {
     padding-top: 75px;
@@ -52,11 +52,11 @@
 .training__text {
   margin: 0;
   max-width: 74%;
-  padding-top: 38px;
+  padding-top: 33px;
   line-height: 24px;
 
   @include vp-1199 {
-    padding-top: 26px;
+    padding-top: 22px;
     max-width: 90%;
   }
 
@@ -70,8 +70,8 @@
 
 .training__swiper {
   padding: 0 calc(50% - 610px);
-  padding-top: 52px;
-  padding-bottom: 39px;
+  padding-top: 56px;
+  padding-bottom: 40px;
 
   @include vp-1279 {
     padding: 52px 30px 39px;
@@ -79,29 +79,31 @@
 
   @include vp-1199 {
     padding: 0 calc(50% - 349px);
-    padding-top: 62px;
-    padding-bottom: 41px;
+    padding-top: 66px;
+    padding-bottom: 33px;
   }
 
   @include vp-767 {
-    padding: 47px 5px 37px;
+    padding: 47px 5px 27px;
   }
 }
 
 .training__subtitle {
   padding-left: 10px;
-  padding-bottom: 44px;
+  padding-bottom: 32px;
   display: grid;
   grid-template-columns: 1fr 78px;
 
   @include vp-1199 {
-    padding-bottom: 34px;
+    padding-bottom: 22px;
   }
 }
 
 .training__button {
+  top: 71px;
+
   &--next {
-    right: calc(50% - 600px);
+    right: calc(50% - 599px);
 
     @include vp-1279 {
       right: 40px;
@@ -113,13 +115,13 @@
     }
 
     @include vp-767 {
-      top: 60px;
+      top: 58px;
       right: 15px;
     }
   }
 
   &--prev {
-    right: calc(50% - 600px + 41px);
+    right: calc(50% - 599px + 41px);
 
     @include vp-1279 {
       right: 81px;
@@ -131,7 +133,7 @@
     }
 
     @include vp-767 {
-      top: 60px;
+      top: 58px;
       right: 56px;
     }
   }

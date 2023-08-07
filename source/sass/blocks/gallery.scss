@@ -1,0 +1,115 @@
+.gallery {
+  // padding: 126px 0 0;
+
+  // @include vp-1199 {
+  //   padding: 0;
+  // }
+
+}
+
+.gallery__title {
+  padding: 0 calc(50% - 600px);
+
+  &::after {
+    content: "Фотогалерея";
+    left: calc(50% - 600px);
+
+    @include vp-1199 {
+      left: calc(50% - 339px);
+    }
+
+    @include vp-767 {
+      left: 15px;
+    }
+  }
+
+  @include vp-1199 {
+    padding: 0 calc(50% - 339px);
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
+}
+
+.gallery__swiper {
+  padding: 27px 0 0;
+
+  & p {
+    line-height: 24px;
+    max-width: 65%;
+    padding: 0 calc(50% - 600px) 45px;
+    margin: 0;
+
+    @include vp-1199 {
+      font-size: 14px;
+      line-height: 22px;
+      padding: 0 calc(50% - 339px) 36px;
+    }
+
+    @include vp-767 {
+      font-size: 12px;
+      line-height: 18px;
+      max-width: 100%;
+      padding: 0 15px 64px;
+    }
+  }
+
+  @include vp-1199 {
+    padding: 26px 0 0;
+  }
+
+  @include vp-767 {
+    padding: 15px 0 0;
+  }
+}
+
+.gallery__card {
+  width: fit-content;
+  height: auto;
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &--layered {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+
+    @include vp-767 {
+      gap: 3px;
+    }
+  }
+}
+
+.gallery__button {
+  top: 50px;
+
+  &--prev {
+    right: calc(50% - 600px);
+
+    @include vp-1199 {
+      right: calc(50% - 339px);
+    }
+
+    @include vp-767 {
+      right: 15px;
+    }
+  }
+
+  &--next {
+    right: calc(50% - 641px);
+
+    @include vp-1199 {
+      right: calc(50% - 380px);
+    }
+
+    @include vp-767 {
+      right: 56px;
+    }
+  }
+
+
+}

@@ -2,6 +2,8 @@
 import Swiper from './vendor/swiper';
 import './vendor/focus-visible-polyfill';
 
+// Свайпер для хиро-хедера
+
 export const heroSwiper = new Swiper('.main-header__swiper', {
   // cssMode: true,
   loop: true,
@@ -10,6 +12,8 @@ export const heroSwiper = new Swiper('.main-header__swiper', {
     clickable: true,
   },
 });
+
+// Свайпер для Ближайших туров
 
 export const toursSwiper = new Swiper('.tours__swiper', {
   cssMode: true,
@@ -32,6 +36,8 @@ export const toursSwiper = new Swiper('.tours__swiper', {
   keyboard: true,
 });
 
+// Свайпер для Обучения
+
 export const trainersSwiper = new Swiper('.training__swiper', {
   cssMode: true,
   slidesPerView: 1,
@@ -53,6 +59,8 @@ export const trainersSwiper = new Swiper('.training__swiper', {
   keyboard: true,
 });
 
+// Свайпер для Отзывов
+
 export const reviewSwiper = new Swiper('.review__swiper', {
   cssMode: true,
   slidesPerView: 1,
@@ -66,6 +74,65 @@ export const reviewSwiper = new Swiper('.review__swiper', {
   navigation: {
     nextEl: '.review__button--next',
     prevEl: '.review__button--prev',
+  },
+  keyboard: true,
+});
+
+// Свайпер для Преимуществ
+
+const breakpoint = window.matchMedia('(min-width:1200px)');
+let advantagesSwiper;
+
+const setAdvantagesSwiper = () => {
+  advantagesSwiper = new Swiper('.advantages__swiper', {
+    cssMode: true,
+    loop: true,
+    slidesPerView: 'auto',
+    // spaceBetween: 30,
+    centeredSlides: true,
+    keyboard: true,
+    navigation: {
+      nextEl: '.advantages__button--next',
+      prevEl: '.advantages__button--prev',
+    },
+  });
+};
+
+const breakpointChecker = () => {
+  if (!breakpoint.matches) {
+    if (advantagesSwiper) {
+      advantagesSwiper.destroy(true, true);
+      return;
+    }
+  }
+  setAdvantagesSwiper();
+};
+
+breakpoint.addListener(breakpointChecker);
+breakpointChecker();
+
+
+// Свайпер для Фотогалереи
+
+export const gallerySwiper = new Swiper('.gallery__swiper', {
+  cssMode: true,
+  slidesPerView: 2,
+  spaceBetween: 3,
+  breakpoints: {
+    768: {
+      slidesPerView: 'auto',
+      spaceBetween: 5,
+      centeredSlides: true,
+    },
+    1200: {
+      slidesPerView: 5,
+      spaceBetween: 5,
+      centeredSlides: true,
+    },
+  },
+  navigation: {
+    nextEl: '.gallery__button--next',
+    prevEl: '.gallery__button--prev',
   },
   keyboard: true,
 });
