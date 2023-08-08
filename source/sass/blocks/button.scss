@@ -4,6 +4,7 @@
   background-color: $color-default-blue;
   text-align: center;
   transition: background-color $trans-default;
+  border: none;
 
   @include hover-focus {
     background-color: transparent;

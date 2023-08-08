@@ -36,7 +36,7 @@
   top: 0;
   left: 0;
   z-index: -1;
-  overflow: hidden;
+  // overflow: hidden;
 
   @include vp-1199 {
     padding-bottom: 133.33%;

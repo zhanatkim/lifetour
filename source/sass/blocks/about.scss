@@ -19,7 +19,7 @@
   @include vp-767 {
     align-items: flex-start;
     padding: 0 15px;
-    padding-top: 16px;
+    padding-top: 465px;
   }
 }
 
@@ -28,28 +28,40 @@
   position: absolute;
   z-index: -1;
 
-  & img {
-    max-width: 100%;
-    height: auto;
-  }
+  // & img {
+  //   width: 100%;
+  //   height: 100%;
+  // }
 }
 
 .about__image {
   left: 0;
   top: 95px;
-  width: 56%;
+  width: 808px;
+  height: 474px;
 
   @include vp-1199 {
-    width: 100%;
+    width: 685px;
+    height: 402px;
     top: 77px;
     left: -211px;
   }
 
   @include vp-767 {
-    width: 100%;
-    position: relative;
-    left: -15px;
-    top: 0;
+    width: 685px;
+    height: 402px;
+    left: 0;
+    right: auto;
+    top: 16px;
+  }
+
+  @media (max-width: (685px)) {
+    left: auto;
+    right: 0;
+  }
+
+  @media (max-width: (500px)) {
+    right: -35.4%;
   }
 }
 

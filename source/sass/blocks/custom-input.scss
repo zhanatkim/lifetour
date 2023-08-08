@@ -1,10 +1,7 @@
-.custom-input,
-.custom-textarea {
+.custom-input {
   position: relative;
-
   display: flex;
-  width: 530px;
-  padding: 14px 0 28px;
+  // padding: 14px 0 28px;
 
   @media screen and (max-width: 767px) {
     padding: 4px 0 48px;
@@ -21,19 +18,17 @@
       flex-direction: column;
     }
 
-    input,
-    textarea {
+    input {
       flex-grow: 1;
-      max-width: 300px;
-      min-height: 48px;
-      margin-left: auto;
-      padding: 10px;
-
-      border: 2px solid rgba(#000000, 0.2);
-      border-radius: 5px;
+      max-width: 100%;
+      padding: 24px 30px;
+      border: 1px solid rgba(2, 102, 193, 0.1);
       outline: none;
+      transition: border $trans-default;
 
-      transition: border 0.3s ease;
+      &::placeholder {
+        color: rgba($color-default-black, 0.5);
+      }
 
       @media screen and (max-width: 767px) {
         max-width: unset;
@@ -41,11 +36,19 @@
       }
 
       &:hover {
-        border: 2px solid rgba(#000000, 0.5);
+        border: 1px solid $color-default-blue;
+
+        &::placeholder {
+          color: $color-default-blue;
+        }
       }
 
       &:focus {
-        border: 2px solid rgba(#000000, 0.8);
+        border: 1px solid $color-hover-navy;
+
+        &::placeholder {
+          color: transparent;
+        }
       }
     }
   }

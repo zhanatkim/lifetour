@@ -953,8 +953,8 @@
           </div>
           <div class="about__bg-image">
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photos/about-clouds2-desktop-2x.webp 2x, img/photos/about-clouds2-desktop-1x.webp 1x" width="840" height="280">
-              <img media="(min-width: 1200px)" src="img/photos/about-clouds2-desktop-1x.jpg" srcset="img/photos/about-clouds2-desktop-2x.jpg 2x" width="840" height="280" alt="Облака.">
+              <source type="image/webp" srcset="img/photos/about-clouds2-desktop-2x.webp 2x, img/photos/about-clouds2-desktop-1x.webp 1x" width="840" height="280">
+              <img src="img/photos/about-clouds2-desktop-1x.jpg" srcset="img/photos/about-clouds2-desktop-2x.jpg 2x" width="840" height="280" alt="Облака.">
             </picture>
           </div>
           <h2 class="about__title title title--medium">О нас</h2>
@@ -990,7 +990,7 @@
                   </div>
                   <div class="review__text">
                     <div class="review__comment">
-                      <p>Осенью ходили в&nbsp;поход на&nbsp;Алтай с&nbsp;друзьями. Впечатления потрясающие! Инструкторы&nbsp;&mdash;
+                      <p>Осенью ходили в&nbsp;поход на&nbsp;Алтай с друзьями. Впечатления потрясающие! Инструкторы&nbsp;&mdash;
                         настоящие эксперты&nbsp;&mdash; всему научили, все показали.
                         Делились увлекательными историями о&nbsp;местах, людях, культуре места.
                       </p>
@@ -1111,8 +1111,8 @@
           </div>
           <div class="review__bg-image">
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photos/review-clouds-2x.webp 2x, img/photos/review-clouds-1x.webp 1x" width="1170" height="391">
-              <img media="(min-width: 1200px)" src="img/photos/review-clouds-1x.jpg" srcset="img/photos/review-clouds-2x.jpg 2x" width="1170" height="391" alt="Облака.">
+              <source type="image/webp" srcset="img/photos/review-clouds-2x.webp 2x, img/photos/review-clouds-1x.webp 1x" width="1170" height="391">
+              <img src="img/photos/review-clouds-1x.jpg" srcset="img/photos/review-clouds-2x.jpg 2x" width="1170" height="391" alt="Облака.">
             </picture>
           </div>
         </section>
@@ -1204,8 +1204,8 @@
           </div>
           <div class="advantages__bg-image">
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photos/advantages-clouds-2x.webp 2x, img/photos/advantages-clouds-1x.webp 1x" width="788" height="263">
-              <img media="(min-width: 1200px)" src="img/photos/advantages-clouds-1x.jpg" srcset="img/photos/advantages-clouds-2x.jpg 2x" width="788" height="263" alt="Облака.">
+              <source type="image/webp" srcset="img/photos/advantages-clouds-2x.webp 2x, img/photos/advantages-clouds-1x.webp 1x" width="788" height="263">
+              <img src="img/photos/advantages-clouds-1x.jpg" srcset="img/photos/advantages-clouds-2x.jpg 2x" width="788" height="263" alt="Облака.">
             </picture>
           </div>
         </section>
@@ -1214,6 +1214,21 @@
           <div class="gallery__swiper swiper">
             <p>Добавляйте фото в&nbsp;Instagram с&nbsp;хэштегом #лайфтур, а&nbsp;также отмечайте нас на&nbsp;фото.
               Лучшие фотографии украсят этот раздел нашего сайта.</p>
+
+              <div class="gallery__button gallery__button--prev swiper-button swiper-button--prev swiper-button-prev">
+                <span class="visually-hidden">Предыдущий слайд</span>
+                <svg width="14" height="8" fill="currentColor">
+                  <use xlink:href="img/sprite.svg#slider-button-prev"></use>
+                </svg>
+              </div>
+
+              <div class="gallery__button gallery__button--next swiper-button swiper-button--next swiper-button-next">
+                <span class="visually-hidden">Предыдущий слайд</span>
+                <svg width="14" height="8" fill="currentColor">
+                  <use xlink:href="img/sprite.svg#slider-button-next"></use>
+                </svg>
+              </div>
+
               <div class="gallery__wrapper swiper__wrapper swiper-wrapper">
                 <div class="gallery__slide swiper__slide swiper-slide">
                   <div class="gallery__card">
@@ -1326,21 +1341,35 @@
                 </div>
 
               </div>
-              <div class="gallery__button gallery__button--prev swiper-button swiper-button--prev swiper-button-prev">
-                <span class="visually-hidden">Предыдущий слайд</span>
-                <svg width="14" height="8" fill="currentColor">
-                  <use xlink:href="img/sprite.svg#slider-button-prev"></use>
-                </svg>
-              </div>
-              <div class="gallery__button gallery__button--next swiper-button swiper-button--next swiper-button-next">
-                <span class="visually-hidden">Предыдущий слайд</span>
-                <svg width="14" height="8" fill="currentColor">
-                  <use xlink:href="img/sprite.svg#slider-button-next"></use>
-                </svg>
-              </div>
           </div>
         </section>
-        <section class="form"></section>
+        <section class="form">
+          <h2 class="form__title title">Остались вопросы?</h2>
+          <p>Заполните форму и наш оператор свяжется с&nbsp;вами для консультации.</p>
+          <form method="post" action="https://echo.htmlacademy.ru/" novalidate>
+            <div class="form__custom-input custom-input" data-validate-type="text" data-limitation="name" data-message-base="Обязательное поле" data-message-extra="Проверьте корректность заполнения поля" data-required>
+              <label>
+                <input type="text" name="name" placeholder="Как к вам обращаться?" required>
+              </label>
+            </div>
+            <div class="form__custom-input custom-input" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-message-base="Обязательное поле" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required>
+              <label>
+                <input type="tel" name="tel" placeholder="Телефон" required>
+              </label>
+            </div>
+            <button class="form__button button" type="submit">Отправить</button>
+          </form>
+          <div class="form__image">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photos/form-bg-desktop-2x.webp 2x, img/photos/form-bg-desktop-1x.webp 1x" width="1440" height="1147">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photos/form-bg-tablet-2x.webp 2x, img/photos/form-bg-tablet-1x.webp 1x" width="768" height="679">
+              <source type="image/webp" srcset="img/photos/form-bg-mobile-2x.webp 2x, img/photos/form-bg-mobile-1x.webp 1x" width="320" height="621">
+              <source media="(min-width: 1200px)" srcset="img/photos/form-bg-desktop-2x.jpg 2x, img/photos/form-bg-desktop-1x.jpg 1x" width="1440" height="1147">
+              <source media="(min-width: 768px)" srcset="img/photos/form-bg-tablet-2x.jpg 2x, img/photos/form-bg-tablet-1x.jpg 1x" width="768" height="679">
+              <img src="img/photos/form-bg-mobile-1x.jpg" srcset="img/photos/form-bg-mobile-2x.jpg 2x" width="320" height="621" alt="Хвойный лес.">
+            </picture>
+          </div>
+        </section>
         <section class="contacts"></section>
       </main>
       <footer class="page-footer">

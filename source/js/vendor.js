@@ -102,6 +102,7 @@ const breakpointChecker = () => {
   if (!breakpoint.matches) {
     if (advantagesSwiper) {
       advantagesSwiper.destroy(true, true);
+      // sliceSliders();
       return;
     }
   }
@@ -115,19 +116,12 @@ breakpointChecker();
 // Свайпер для Фотогалереи
 
 export const gallerySwiper = new Swiper('.gallery__swiper', {
-  cssMode: true,
-  slidesPerView: 2,
+  slidesPerView: 'auto',
   spaceBetween: 3,
   breakpoints: {
     768: {
       slidesPerView: 'auto',
       spaceBetween: 5,
-      centeredSlides: true,
-    },
-    1200: {
-      slidesPerView: 5,
-      spaceBetween: 5,
-      centeredSlides: true,
     },
   },
   navigation: {
