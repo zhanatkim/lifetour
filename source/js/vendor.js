@@ -1,6 +1,7 @@
 // Swiper 7.4.1
 import Swiper from './vendor/swiper';
 import './vendor/focus-visible-polyfill';
+import L from './vendor/leaflet/leaflet';
 
 // Свайпер для хиро-хедера
 
@@ -130,3 +131,13 @@ export const gallerySwiper = new Swiper('.gallery__swiper', {
   },
   keyboard: true,
 });
+
+// Карта
+
+export const map = L.map('map').setView([59.9682871, 30.3176164], 13);
+
+export const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 19,
+  attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
+
+export const marker = L.marker([59.9682871, 30.3176164]).addTo(map);

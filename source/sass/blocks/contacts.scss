@@ -1,0 +1,163 @@
+.contacts {
+  padding: 79px calc(50% - 600px) 104px;
+
+  @include vp-1279 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @include vp-1199 {
+    padding: 85px calc(50% - 339px) 70px;
+  }
+
+  @include vp-767 {
+    padding: 66px 15px 30px;
+  }
+}
+
+.contacts__title {
+  &::after {
+    content: "Контакты";
+  }
+}
+
+.contacts__wrapper {
+  display: grid;
+  // grid-template-columns: 483px 48.75%;
+  grid-template-columns: 40.25% 48.75%;
+  gap: 132px;
+  padding-top: 26px;
+
+  & p {
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+
+    @include vp-1199 {
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
+
+  @include vp-1199 {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-top: 20px;
+  }
+
+  @include vp-767 {
+    gap: 30px;
+    padding-top: 12px;
+  }
+}
+
+.contacts__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+
+  @include vp-1199 {
+    gap: 40px;
+  }
+
+  @include vp-767 {
+    gap: 30px;
+  }
+}
+
+.contacts__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+
+  @include vp-1199 {
+    flex-direction: row;
+    gap: 44px;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.contacts__item {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+
+  @include vp-1199 {
+    gap: 10px;
+  }
+
+  @include vp-767 {
+    align-items: flex-start;
+  }
+}
+
+.contacts__card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  & a,
+  & p {
+    color: $color-default-black;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+
+    @include vp-1199 {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    @include vp-767 {
+      line-height: 20px;
+    }
+  }
+
+  & p {
+    margin: 0;
+    padding: 0;
+  }
+
+  @include vp-1199 {
+    gap: 6px;
+  }
+
+  @include vp-767 {
+    gap: 8px;
+  }
+}
+
+.contacts__name {
+  font-size: 18px;
+  font-weight: 600;
+
+  @include vp-1199 {
+    font-size: 16px;
+  }
+
+  @include vp-767 {
+    font-size: 14px;
+  }
+}
+
+.contacts__map {
+  width: 100%;
+  height: 100%;
+
+  @include vp-1199 {
+    height: 340px;
+  }
+
+  @include vp-767 {
+    height: 320px;
+  }
+}
