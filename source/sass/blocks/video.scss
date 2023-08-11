@@ -2,7 +2,7 @@
   position: relative;
   cursor: pointer;
   width: 100%;
-  height: 100%;
+  height: auto;
 
   &[data-is-playing="is-out"] {
     & .video__button {
@@ -21,7 +21,8 @@
   }
 
   &[data-is-playing="is-playing"] {
-    & .video__button {
+    & .video__button,
+    & img {
       display: none;
     }
   }
@@ -32,13 +33,18 @@
   }
 
   & iframe {
-    width: 100%;
-    height: 100%;
+    width: 482px;
+    height: 317px;
     border: none;
+
+    @include vp-1199 {
+      width: 442px;
+      height: 300px;
+    }
   }
 
   @include hover-focus {
-    & .video__button{
+    & .video__button {
       outline: none;
       border: 1px solid $color-hover-navy;
       background-color: rgba(118, 119, 120, 0.2);
@@ -52,12 +58,10 @@
   }
 }
 
-
-
 .video__button {
   position: absolute;
   top: calc(50% - 28px);
-  left: calc(50% - 28px);;
+  left: calc(50% - 28px);
   width: 56px;
   height: 56px;
   border-radius: 50%;

@@ -17,10 +17,10 @@
     display: none;
     width: 100%;
 
-    &--no-js {
-      display: block;
-      position: static;
-    }
+    // &--no-js {
+    //   display: block;
+    //   position: static;
+    // }
 
     &--is-active {
       display: block;
@@ -119,5 +119,4 @@
   @include vp-767 {
     font-size: 14px;
   }
-
 }

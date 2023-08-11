@@ -57,12 +57,12 @@
 
   @include vp-1199 {
     padding-top: 22px;
-    max-width: 90%;
+    max-width: 86%;
   }
 
   @include vp-767 {
     max-width: 100%;
-    padding-top: 18px;
+    padding-top: 16px;
     font-size: 14px;
     line-height: 20px;
   }
@@ -84,7 +84,7 @@
   }
 
   @include vp-767 {
-    padding: 47px 5px 27px;
+    padding: 49px 5px 28px;
   }
 }
 
@@ -115,7 +115,7 @@
     }
 
     @include vp-767 {
-      top: 58px;
+      top: 60px;
       right: 15px;
     }
   }
@@ -129,11 +129,11 @@
 
     @include vp-1199 {
       top: 78px;
-      right: calc(50% - 339px  + 41px);
+      right: calc(50% - 339px + 41px);
     }
 
     @include vp-767 {
-      top: 58px;
+      top: 60px;
       right: 56px;
     }
   }

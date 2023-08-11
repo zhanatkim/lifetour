@@ -1,10 +1,12 @@
 .custom-input {
   position: relative;
   display: flex;
-  // padding: 14px 0 28px;
+
+  @include vp-1199 {
+    width: 90%;
+  }
 
   @include vp-767 {
-    padding: 4px 0 48px;
     width: 100%;
   }
 
@@ -21,7 +23,7 @@
     input {
       flex-grow: 1;
       max-width: 100%;
-      padding: 24px 30px;
+      padding: 22px 30px;
       line-height: 100%;
       border: 1px solid rgba(2, 102, 193, 0.1);
       outline: none;
@@ -32,7 +34,8 @@
       }
 
       @include vp-1199 {
-        padding: 18px 15px;
+        font-size: 14px;
+        padding: 15px;
       }
 
       @include vp-767 {
@@ -68,11 +71,8 @@
     position: absolute;
     right: 0;
     bottom: 35px;
-
-    color: #ff1553;
-
+    color: $color-error;
     opacity: 0;
-
     transition: opacity 0.3s ease;
 
     @include vp-767 {
@@ -81,39 +81,23 @@
   }
 
   &.is-invalid {
-    input,
-    textarea {
-      border: 2px solid #ff1553;
-
-      &:focus,
-      &:hover {
-        border: 2px solid rgba(#ff1553, 0.5);
-      }
-    }
-  }
-
-  &.is-valid {
     input {
-      border: 2px solid #22b259;
+      border: 1px solid  $color-error;
 
       &:focus,
       &:hover {
-        border: 2px solid rgba(#22b259, 0.5);
+        border: 1px solid rgba($color-error, 0.5);
       }
     }
   }
 
   .input-message {
     position: absolute;
-    right: 0;
-    bottom: -5px;
+    left: 30px;
+    bottom: 2px;
 
     &.is-invalid {
-      color: #ff0000;
-    }
-
-    &.is-valid {
-      color: #15ab07;
+      color: $color-error;
     }
   }
 }

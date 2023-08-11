@@ -1,6 +1,6 @@
 .audio-player {
   width: 340px;
-  height: auto;
+  height: 220px;
 
   &[data-is-playing="is-out"] {
     & .audio-player__button-play {
@@ -17,7 +17,7 @@
   & iframe {
     width: 100%;
     height: 100%;
-
+    border: none;
   }
 }
 

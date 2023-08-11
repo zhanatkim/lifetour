@@ -1,5 +1,5 @@
 .contacts {
-  padding: 79px calc(50% - 600px) 104px;
+  padding: 82px calc(50% - 600px) 104px;
 
   @include vp-1279 {
     padding-left: 40px;
@@ -7,11 +7,11 @@
   }
 
   @include vp-1199 {
-    padding: 85px calc(50% - 339px) 70px;
+    padding: 88px calc(50% - 339px) 68px;
   }
 
   @include vp-767 {
-    padding: 66px 15px 30px;
+    padding: 66px 15px 28px;
   }
 }
 
@@ -26,7 +26,7 @@
   // grid-template-columns: 483px 48.75%;
   grid-template-columns: 40.25% 48.75%;
   gap: 132px;
-  padding-top: 26px;
+  padding-top: 23px;
 
   & p {
     margin: 0;
@@ -34,9 +34,11 @@
     line-height: 24px;
 
     @include vp-1199 {
+      width: 71%;
     }
 
     @include vp-767 {
+      width: 98%;
       font-size: 14px;
       line-height: 20px;
     }
@@ -45,7 +47,7 @@
   @include vp-1199 {
     grid-template-columns: 1fr;
     gap: 40px;
-    padding-top: 20px;
+    padding-top: 18px;
   }
 
   @include vp-767 {
@@ -64,7 +66,7 @@
   }
 
   @include vp-767 {
-    gap: 30px;
+    gap: 28px;
   }
 }
 
@@ -82,28 +84,48 @@
 
   @include vp-767 {
     flex-direction: column;
-    gap: 30px;
+    gap: 28px;
   }
 }
 
 .contacts__item {
-  display: flex;
+  display: grid;
+  grid-template-columns: 26px 1fr;
   gap: 30px;
   align-items: center;
 
+  & svg {
+    align-self: center;
+    width: 26px;
+    height: 26px;
+
+    @include vp-1199 {
+      align-self: flex-start;
+      width: 24px;
+      height: 24px;
+    }
+
+    @include vp-767 {
+
+      width: 22px;
+      height: 22px;
+    }
+  }
+
   @include vp-1199 {
+    grid-template-columns: 24px 1fr;
     gap: 10px;
   }
 
   @include vp-767 {
-    align-items: flex-start;
+    grid-template-columns: 22px 1fr;
   }
 }
 
 .contacts__card {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 
   & a,
   & p {
@@ -115,10 +137,12 @@
     @include vp-1199 {
       font-size: 14px;
       line-height: 22px;
+      width: 100%;
     }
 
     @include vp-767 {
       line-height: 20px;
+      width: 65%;
     }
   }
 
@@ -151,9 +175,11 @@
 
 .contacts__map {
   width: 100%;
-  height: 100%;
+  height: 95%;
+  margin-top: 16px;
 
   @include vp-1199 {
+    margin: 0;
     height: 340px;
   }
 

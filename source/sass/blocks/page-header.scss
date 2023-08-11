@@ -27,6 +27,18 @@
         color: $color-default-black;
       }
     }
+
+    &--is-active {
+      & .page-header__top {
+        padding: 0 calc(50% - 339px);
+        position: fixed;
+        z-index: 10;
+
+        @include vp-767 {
+          padding: 0 15px;
+        }
+      }
+    }
   }
 
   @include vp-767 {
@@ -55,18 +67,16 @@
 
   @include vp-1199 {
     width: 60.5%;
-
   }
 
   @include vp-767 {
     width: fit-content;
     flex-direction: column;
     gap: 5px;
-
   }
 }
 
-.page-header__toggle  {
+.page-header__toggle {
   margin: 0;
   padding: 0;
   display: none;
@@ -98,7 +108,7 @@
   color: $color-default-white;
   transition: color $trans-default;
 
-  &  svg {
+  & svg {
     width: 205px;
     height: 62px;
 

@@ -1,13 +1,14 @@
+import '../utils/scroll-lock';
 
 const header = document.querySelector('.page-header');
 const menuList = header.querySelector('.nav');
 const menuToggle = header.querySelector('.page-header__toggle');
-const mainHeader = document.querySelector('.main-header');
+// const mainHeader = document.querySelector('.main-header');
 
-header.classList.remove('page-header--no-js');
-mainHeader.classList.remove('main-header--no-js');
-menuList.classList.remove('nav--no-js');
-menuToggle.classList.remove('page-header__toggle--no-js');
+// header.classList.remove('page-header--no-js');
+// mainHeader.classList.remove('main-header--no-js');
+// menuList.classList.remove('nav--no-js');
+// menuToggle.classList.remove('page-header__toggle--no-js');
 
 const onNavOutsideClick = (evt) => {
   if (!evt.target.closest('.nav__list')) {
@@ -19,6 +20,7 @@ function closeMenu() {
   menuList.classList.remove('nav--is-active');
   header.classList.remove('page-header--is-active');
   menuToggle.classList.remove('page-header__toggle--is-active');
+  window.scrollLock.enableScrolling();
   menuList.removeEventListener('click', onNavOutsideClick);
   menuToggle.removeEventListener('click', closeMenu);
 }
@@ -30,9 +32,9 @@ const openMenu = () => {
   header.classList.add('page-header--is-active');
   menuToggle.classList.add('page-header__toggle--is-active');
   menuList.classList.add('nav--is-active');
+  window.scrollLock.disableScrolling();
   menuList.addEventListener('click', onNavOutsideClick);
   menuToggle.addEventListener('click', closeMenu);
 };
 
 menuToggle.addEventListener('click', openMenu);
-

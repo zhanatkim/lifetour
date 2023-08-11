@@ -17,13 +17,10 @@
 
 .review__title {
   padding-left: 10px;
+
   &::after {
     content: "Отзывы";
   }
-
-  // @include vp-767 {
-  //   padding-left: 15px;
-  // }
 }
 
 .review__swiper {
@@ -109,6 +106,8 @@
   }
 
   @include vp-767 {
+    max-width: 290px;
+    margin: 10px auto;
     grid-template-columns: 1fr;
     gap: 20px;
   }
