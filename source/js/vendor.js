@@ -5,7 +5,7 @@ import './modules/training-swiper';
 import './modules/review-swiper';
 import './modules/advantages-swiper';
 import './modules/gallery-swiper';
-import L from './vendor/leaflet/leaflet';
+import L from 'leaflet';
 
 // Карта
 

@@ -37,5 +37,3 @@ export const setEventListener = () => {
     videoContainer.append(videoPlayer);
   }
 };
-
-
