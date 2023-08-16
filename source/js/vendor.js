@@ -6,6 +6,9 @@ import './modules/review-swiper';
 import './modules/advantages-swiper';
 import './modules/gallery-swiper';
 import L from 'leaflet';
+import 'lazysizes';
+// import a plugin
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 // Карта
 

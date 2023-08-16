@@ -4873,10 +4873,6 @@ button,
   .advantages {
     padding: 77px calc(50% - 339px) 70px;
   }
-  .advantages .advantages__swiper > .advantages__wrapper > .advantages__slide:first-child {
-    -webkit-margin-start: 0;
-            margin-inline-start: 0;
-  }
 }
 @media (max-width: 767px) {
   .advantages {

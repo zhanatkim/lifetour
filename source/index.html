@@ -56,7 +56,7 @@
           <div class="main-header__swiper swiper">
             <div class="main-header__wrapper swiper__wrapper swiper-wrapper">
 
-              <div class="main-header__slide main-header__slide--video swiper__slide swiper-slide">
+              <div class="main-header__slide swiper__slide swiper-slide">
                 <div class="main-header__bg-photo">
                   <picture>
                     <source type="image/webp" media="(min-width: 1200px)" srcset="img/photos/hero-desktop-1-2x.webp 2x, img/photos/hero-desktop-1-1x.webp 1x" width="1440" height="800">
@@ -114,7 +114,7 @@
                     <source type="image/webp" media="(min-width: 320px)" srcset="img/photos/hero-mobile-2-2x.webp 2x, img/photos/hero-mobile-2-1x.webp 1x" width="320" height="568">
                     <source media="(min-width: 1200px)" srcset="img/photos/hero-desktop-2-2x.jpg 2x, img/photos/hero-desktop-2-1x.jpg 1x" width="1440" height="800">
                     <source media="(min-width: 768px)" srcset="img/photos/hero-tablet-2-2x.jpg 2x, img/photos/hero-tablet-2-1x.jpg 1x" width="768" height="1024">
-                    <img src="img/photos/hero-mobile-2-1x.jpg" srcset="img/photos/hero-mobile-2-2x.jpg 2x" width="320" height="568" alt="Горы камчатки.">
+                    <img class="lazyload" data-src="img/photos/hero-mobile-2-1x.jpg" srcset="img/photos/hero-mobile-2-2x.jpg 2x" width="320" height="568" alt="Горы камчатки.">
                   </picture>
                 </div>
                 <div class="main-header__inner">
@@ -143,14 +143,14 @@
                         <source type="image/webp" media="(min-width: 1200px)" srcset="img/photos/hero-slide2-cards-desktop-2x.webp 2x, img/photos/hero-slide2-cards-desktop-1x.webp 1x" width="410" height="459">
                         <source type="image/webp" media="(min-width: 768px)" srcset="img/photos/hero-slide2-cards-tablet-2x.webp 2x, img/photos/hero-slide2-cards-tablet-1x.webp 1x" width="442" height="365">
                         <source media="(min-width: 1200px)" srcset="img/photos/hero-slide2-cards-desktop-2x.png 2x, img/photos/hero-slide2-cards-desktop-1x.png 1x" width="410" height="459">
-                        <img src="img/photos/hero-slide2-cards-tablet-1x.png" srcset="img/photos/hero-slide2-cards-tablet-2x.png 2x" width="442" height="365" alt="Красивое горное озеро.">
+                        <img class="lazyload" data-src="img/photos/hero-slide2-cards-tablet-1x.png" srcset="img/photos/hero-slide2-cards-tablet-2x.png 2x" width="442" height="365" alt="Красивое горное озеро.">
                       </picture>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="main-header__slide main-header__slide--audio swiper__slide swiper-slide">
+              <div class="main-header__slide swiper__slide swiper-slide">
                 <div class="main-header__bg-photo">
                   <picture>
                     <source type="image/webp" media="(min-width: 1200px)" srcset="img/photos/hero-desktop-3-2x.webp 2x, img/photos/hero-desktop-3-1x.webp 1x" width="1440" height="800">
@@ -158,7 +158,7 @@
                     <source type="image/webp" media="(min-width: 320px)" srcset="img/photos/hero-mobile-3-2x.webp 2x, img/photos/hero-mobile-3-1x.webp 1x" width="320" height="568">
                     <source media="(min-width: 1200px)" srcset="img/photos/hero-desktop-3-2x.jpg 2x, img/photos/hero-desktop-3-1x.jpg 1x" width="1440" height="800">
                     <source media="(min-width: 768px)" srcset="img/photos/hero-tablet-3-2x.jpg 2x, img/photos/hero-tablet-3-1x.jpg 1x" width="768" height="1024">
-                    <img src="img/photos/hero-mobile-3-1x.jpg" srcset="img/photos/hero-mobile-3-2x.jpg 2x" width="320" height="568" alt="Вид на речку в окружении гор.">
+                    <img class="lazyload" data-src="img/photos/hero-mobile-3-1x.jpg" srcset="img/photos/hero-mobile-3-2x.jpg 2x" width="320" height="568" alt="Вид на речку в окружении гор.">
                   </picture>
                 </div>
                 <div class="main-header__inner">
@@ -808,7 +808,7 @@
                       <source type="image/webp" srcset="img/photos/trainer1-mobile-1x.webp 1x, img/photos/trainer1-mobile-2x.webp 2x" width="250" height="212">
                       <source media="(min-width: 1200px)" srcset="img/photos/trainer1-desktop-1x.jpg 1x, img/photos/trainer1-desktop-2x.jpg 2x" width="238" height="212">
                       <source media="(min-width: 768px)" srcset="img/photos/trainer1-tablet-1x.jpg 1x, img/photos/trainer1-tablet-2x.jpg 2x" width="176" height="212">
-                      <img src="img/photos/trainer1-mobile-1x.jpg" srcset="img/photos/trainer1-mobile-2x.jpg 2x" alt="Инструктор по подготовке." width="250" height="212">
+                      <img class="lazyload" data-src="img/photos/trainer1-mobile-1x.jpg" srcset="img/photos/trainer1-mobile-2x.jpg 2x" alt="Инструктор по подготовке." width="250" height="212">
                     </picture>
                   </div>
                   <div class="trainer-card__inner">
@@ -833,7 +833,7 @@
                       <source type="image/webp" srcset="img/photos/trainer2-mobile-1x.webp 1x, img/photos/trainer2-mobile-2x.webp 2x" width="250" height="212">
                       <source media="(min-width: 1200px)" srcset="img/photos/trainer2-desktop-1x.jpg 1x, img/photos/trainer2-desktop-2x.jpg 2x" width="238" height="212">
                       <source media="(min-width: 768px)" srcset="img/photos/trainer2-tablet-1x.jpg 1x, img/photos/trainer2-tablet-2x.jpg 2x" width="176" height="212">
-                      <img src="img/photos/trainer2-mobile-1x.jpg" srcset="img/photos/trainer2-mobile-2x.jpg 2x" alt="Инструктор по подготовке." width="250" height="212">
+                      <img class="lazyload" data-src="img/photos/trainer2-mobile-1x.jpg" srcset="img/photos/trainer2-mobile-2x.jpg 2x" alt="Инструктор по подготовке." width="250" height="212">
                     </picture>
                   </div>
                   <div class="trainer-card__inner">
@@ -858,7 +858,7 @@
                       <source type="image/webp" srcset="img/photos/trainer3-mobile-1x.webp 1x, img/photos/trainer3-mobile-2x.webp 2x" width="250" height="212">
                       <source media="(min-width: 1200px)" srcset="img/photos/trainer3-desktop-1x.jpg 1x, img/photos/trainer3-desktop-2x.jpg 2x" width="238" height="212">
                       <source media="(min-width: 768px)" srcset="img/photos/trainer3-tablet-1x.jpg 1x, img/photos/trainer3-tablet-2x.jpg 2x" width="176" height="212">
-                      <img src="img/photos/trainer3-mobile-1x.jpg" srcset="img/photos/trainer3-mobile-2x.jpg 2x" alt="Инструктор по подготовке." width="250" height="212">
+                      <img class="lazyload" data-src="img/photos/trainer3-mobile-1x.jpg" srcset="img/photos/trainer3-mobile-2x.jpg 2x" alt="Инструктор по подготовке." width="250" height="212">
                     </picture>
                   </div>
                   <div class="trainer-card__inner">
@@ -883,7 +883,7 @@
                       <source type="image/webp" srcset="img/photos/trainer4-mobile-1x.webp 1x, img/photos/trainer4-mobile-2x.webp 2x" width="250" height="212">
                       <source media="(min-width: 1200px)" srcset="img/photos/trainer4-desktop-1x.jpg 1x, img/photos/trainer4-desktop-2x.jpg 2x" width="238" height="212">
                       <source media="(min-width: 768px)" srcset="img/photos/trainer4-tablet-1x.jpg 1x, img/photos/trainer4-tablet-2x.jpg 2x" width="176" height="212">
-                      <img src="img/photos/trainer4-mobile-1x.jpg" srcset="img/photos/trainer4-mobile-2x.jpg 2x" alt="Инструктор по подготовке." width="250" height="212">
+                      <img class="lazyload" data-src="img/photos/trainer4-mobile-1x.jpg" srcset="img/photos/trainer4-mobile-2x.jpg 2x" alt="Инструктор по подготовке." width="250" height="212">
                     </picture>
                   </div>
                   <div class="trainer-card__inner">
@@ -1062,7 +1062,7 @@
                       <source type="image/webp" srcset="img/photos/review3-mobile-1x.webp 1x, img/photos/review3-mobile-2x.webp 2x" width="250" height="169">
                       <source media="(min-width: 1200px)" srcset="img/photos/review3-desktop-1x.jpg 1x, img/photos/review3-desktop-2x.jpg 2x" width="258" height="253">
                       <source media="(min-width: 768px)" srcset="img/photos/review3-tablet-1x.jpg 1x, img/photos/review3-tablet-2x.jpg 2x" width="186" height="237">
-                      <img src="img/photos/review3-mobile-1x.jpg" srcset="img/photos/review3-mobile-2x.jpg 2x" alt="Евгения Баженова." width="250" height="169">
+                      <img class="lazyload" data-src="img/photos/review3-mobile-1x.jpg" srcset="img/photos/review3-mobile-2x.jpg 2x" alt="Евгения Баженова." width="250" height="169">
                     </picture>
                   </div>
                   <div class="review__text">
@@ -1092,7 +1092,7 @@
                       <source type="image/webp" srcset="img/photos/review4-mobile-1x.webp 1x, img/photos/review4-mobile-2x.webp 2x" width="250" height="169">
                       <source media="(min-width: 1200px)" srcset="img/photos/review4-desktop-1x.jpg 1x, img/photos/review4-desktop-2x.jpg 2x" width="258" height="253">
                       <source media="(min-width: 768px)" srcset="img/photos/review4-tablet-1x.jpg 1x, img/photos/review4-tablet-2x.jpg 2x" width="186" height="237">
-                      <img src="img/photos/review4-mobile-1x.jpg" srcset="img/photos/review4-mobile-2x.jpg 2x" alt="Елена Пирогова." width="250" height="169">
+                      <img class="lazyload" data-src="img/photos/review4-mobile-1x.jpg" srcset="img/photos/review4-mobile-2x.jpg 2x" alt="Елена Пирогова." width="250" height="169">
                     </picture>
                   </div>
                   <div class="review__text">

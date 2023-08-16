@@ -5,10 +5,6 @@
 
   @include vp-1199 {
     padding: 77px  calc(50% - 339px) 70px;
-
-    & .advantages__swiper > .advantages__wrapper > .advantages__slide:first-child {
-      margin-inline-start: 0;
-    }
   }
 
   @include vp-767 {
