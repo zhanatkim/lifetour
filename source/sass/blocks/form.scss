@@ -34,7 +34,6 @@
     }
 
     @include vp-767 {
-      width: 290px;
       padding: 14px 0 26px;
       font-size: 12px;
       text-align: center;
@@ -101,6 +100,7 @@
 }
 
 .form__button {
+  cursor: pointer;
   align-self: center;
   padding: 24px;
 

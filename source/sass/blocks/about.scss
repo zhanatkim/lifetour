@@ -35,11 +35,17 @@
   width: 808px;
   height: 474px;
 
+  @include vp-1279 {
+    left: auto;
+    right:37.1%;
+  }
+
   @include vp-1199 {
     width: 685px;
     height: 402px;
     top: 77px;
     left: -211px;
+    right: auto;
   }
 
   @include vp-767 {

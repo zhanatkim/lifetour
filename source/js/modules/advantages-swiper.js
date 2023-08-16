@@ -7,10 +7,10 @@ let advantagesSwiper;
 
 const setAdvantagesSwiper = () => {
   advantagesSwiper = new Swiper('.advantages__swiper', {
-    cssMode: true,
     loop: true,
     slidesPerView: 'auto',
     centeredSlides: true,
+    freeMode: true,
     keyboard: true,
     navigation: {
       nextEl: '.advantages__button--next',

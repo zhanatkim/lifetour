@@ -16,11 +16,19 @@ const onNavOutsideClick = (evt) => {
   }
 };
 
+const onNaVLinkCloseMenu = (evt) => {
+  if (!evt.target.closest('.nav__link')) {
+    return;
+  }
+  closeMenu();
+};
+
 function closeMenu() {
   menuList.classList.remove('nav--is-active');
   header.classList.remove('page-header--is-active');
   menuToggle.classList.remove('page-header__toggle--is-active');
   window.scrollLock.enableScrolling();
+  menuList.removeEventListener('click', onNaVLinkCloseMenu);
   menuList.removeEventListener('click', onNavOutsideClick);
   menuToggle.removeEventListener('click', closeMenu);
 }
@@ -33,6 +41,7 @@ const openMenu = () => {
   menuToggle.classList.add('page-header__toggle--is-active');
   menuList.classList.add('nav--is-active');
   window.scrollLock.disableScrolling();
+  menuList.addEventListener('click', onNaVLinkCloseMenu);
   menuList.addEventListener('click', onNavOutsideClick);
   menuToggle.addEventListener('click', closeMenu);
 };

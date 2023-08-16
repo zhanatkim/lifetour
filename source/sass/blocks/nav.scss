@@ -3,7 +3,7 @@
   margin: 0;
   position: relative;
   z-index: 3;
-  bottom: 40px;
+  top: -40px;
   left: calc(50% - 564px);
   width: 48.6%;
   background-color: transparent;
@@ -31,6 +31,11 @@
       right: 0;
       overflow: hidden;
       background-color: rgba(0, 0, 0, 0.5);
+
+      & .nav__list {
+        overflow: scroll;
+        max-height: calc(100vh - 20px);
+      }
     }
   }
 }
@@ -43,7 +48,7 @@
   display: flex;
   justify-content: flex-start;
   gap: 31px;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   transition: background-color $trans-default;
 
   @include vp-1199 {

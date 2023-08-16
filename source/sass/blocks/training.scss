@@ -88,6 +88,12 @@
   }
 }
 
+.training__wrapper {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 1fr;
+}
+
 .training__subtitle {
   padding-left: 10px;
   padding-bottom: 32px;

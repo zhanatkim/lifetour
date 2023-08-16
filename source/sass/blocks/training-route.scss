@@ -148,7 +148,7 @@
     padding: 0;
     margin: 0;
     line-height: 24px;
-    align-self: center;
+    align-self: flex-end;
 
     @include vp-767 {
       line-height: 18px;

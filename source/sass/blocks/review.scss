@@ -38,6 +38,7 @@
 
 .review__wrapper {
   padding-top: 17px;
+  align-items: stretch;
 
   @include vp-767 {
     padding-top: 22px;
@@ -82,6 +83,8 @@
 
 .review__slide {
   max-width: 810px;
+  height: auto;
+  display: flex;
 
   @include vp-1199 {
     max-width: 580px;
