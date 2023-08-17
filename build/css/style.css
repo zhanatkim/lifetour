@@ -3094,7 +3094,7 @@ button,
 }
 @media (max-width: 767px) {
   .main-header__inner {
-    padding: 43.44% 15px 0;
+    padding: 43.44% 15px 55px;
   }
 }
 
