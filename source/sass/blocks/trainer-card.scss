@@ -14,15 +14,18 @@
   min-height: 377px;
 
   @include vp-1199 {
+    margin: 10px auto;
+    width: 206px;
     min-height: 411px;
     padding: 15px;
   }
 
   @include vp-767 {
     max-width: 290px;
+    width: unset;
     min-height: 385px;
     padding: 20px;
-    margin: 10px auto;
+    // margin: 10px auto;
   }
 }
 

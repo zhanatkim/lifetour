@@ -4,7 +4,8 @@
   height: auto;
   padding: 0 calc(50% - 489px);
   padding-top: 21.6%;
-  aspect-ratio: 1440 / 800;
+  padding-bottom: 21.3%;
+  // aspect-ratio: 1440 / 800;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,40 +43,47 @@
 
   @include vp-1199 {
     padding: 0 calc(50% - 148px);
-    padding-top: 25.6%;
-    aspect-ratio: 768 / 679;
+    padding-top: 25.3%;
+    padding-bottom: 28.8%;
+    // aspect-ratio: 768 / 679;
+  }
+
+  @include vp-1023 {
+    padding-bottom: 23.8%;
   }
 
   @include vp-767 {
     padding: 0 15px;
     padding-top: 56.56%;
-    aspect-ratio: 320 / 621;
+    padding-bottom: 54.68%;
+    // aspect-ratio: 320 / 621;
   }
 }
 
 .form__image {
   width: 100%;
   position: absolute;
-  padding-bottom: 55.55%;
+  // padding-bottom: 55.55%;
   top: 0;
   left: 0;
   z-index: -1;
 
   & img {
     object-fit: cover;
-    height: 100%;
+    object-position: center;
+    // height: 100%;
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
   }
 
   @include vp-1199 {
-    padding-bottom: 88.41%;
+    // padding-bottom: 88.41%;
   }
 
   @include vp-767 {
-    padding-bottom: 194.06%;
+    // padding-bottom: 194.06%;
   }
 }
 

@@ -10,7 +10,7 @@ export const toursSwiper = new Swiper('.tours__swiper', {
   spaceBetween: 15,
   breakpoints: {
     768: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 18,
     },
     1200: {

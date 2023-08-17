@@ -4,7 +4,9 @@
   position: relative;
 
   @include vp-1199 {
-    padding: 77px  calc(50% - 339px) 70px;
+    // padding: 77px  calc(50% - 339px) 70px;
+
+    padding: 77px  45px 70px;
   }
 
   @include vp-767 {
