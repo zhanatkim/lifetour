@@ -126,11 +126,12 @@
     height: 595px;
     top: 137px;
     left: auto;
-    right: 0;
+    right: -135px;
   }
 
   @include vp-374 {
     left: 45%;
+    right: auto;
   }
 }
 

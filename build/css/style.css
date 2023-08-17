@@ -3737,12 +3737,13 @@ button,
     height: 595px;
     top: 137px;
     left: auto;
-    right: 0;
+    right: -135px;
   }
 }
 @media (max-width: 374px) {
   .tours__bg-hills {
     left: 45%;
+    right: auto;
   }
 }
 
