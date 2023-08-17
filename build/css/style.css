@@ -5418,6 +5418,20 @@ button,
      object-position: center;
   width: 100%;
 }
+@media (max-width: 767px) {
+  .form__image img {
+    height: 100%;
+    -o-object-position: left bottom;
+       object-position: left bottom;
+  }
+}
+@media (max-width: 767px) {
+  .form__image {
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
 .form__title {
   color: #ffffff;
   font-size: 35px;
