@@ -94,10 +94,6 @@
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: 1fr;
-
-  @include vp-1199 {
-    margin: 0 auto;
-  }
 }
 
 .training__subtitle {
