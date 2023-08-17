@@ -1,5 +1,5 @@
 .page-footer {
-  padding: 0 calc(50% - 600px);
+  padding: 0 calc(50% - 600px - 10px) 0 calc(50% - 600px);
   padding-top: 30px;
   padding-bottom: 30px;
   display: grid;
@@ -7,6 +7,11 @@
   gap: 16px;
   border-top: 1px solid rgba($color-default-black, 0.2);
   background-color: $color-default-white;
+
+  @include vp-1279 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 
   @include vp-1199 {
     // padding: 0 calc(50% - 339px);
@@ -44,7 +49,9 @@
 .page-footer__inner {
   display: flex;
   justify-content: space-between;
-  width: 74.25%;
+  width: 73.7%;
+  margin-right: calc(50% - 470px);
+  // width: calc(100% - 150px);
 
   @include vp-1199 {
     width: 100%;
@@ -65,10 +72,11 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 33px;
+  column-gap: 33px;
+  row-gap: 10px;
 
   @include vp-1199 {
-    gap: 21px;
+    column-gap: 21px;
     margin-right: 5px;
     margin-bottom: 3px;
   }
@@ -76,8 +84,10 @@
   @include vp-767 {
     margin: 0;
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-auto-flow: column;
+
     column-gap: 81px;
     row-gap: 13px;
   }
@@ -124,7 +134,7 @@
 
 
 .page-footer__phone {
-  padding: 5px 0;
+  padding: 10px;
   font-size: 18px;
   font-weight: 600;
   transition: color $trans-default;
@@ -161,4 +171,11 @@
   padding: 0;
   font-size: 12px;
   font-weight: 300;
+}
+
+.page-footer__logo {
+  @include focus {
+    outline: 1px solid $color-default-black;
+    outline-offset: 3px;
+  }
 }

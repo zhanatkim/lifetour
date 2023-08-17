@@ -17,41 +17,32 @@
 
 .main-header__slide {
   width: 100%;
-  aspect-ratio: 1440 / 800;
+  height: auto;
   position: relative;
-
-  @include vp-1199 {
-    aspect-ratio: 768 / 1024;
-  }
-
-  @include vp-767 {
-    aspect-ratio: 320 / 568;
-  }
 }
 
 .main-header__bg-photo {
   width: 100%;
+  height: 100%;
   position: absolute;
-  padding-bottom: 55.55%;
+  // padding-bottom: 55.55%;
   top: 0;
   left: 0;
   z-index: -1;
 
   @include vp-1199 {
-    padding-bottom: 133.33%;
+    // padding-bottom: 133.33%;
   }
 
   @include vp-767 {
-    padding-bottom: 177.5%;
+    // padding-bottom: 177.5%;
   }
 
   & img {
     object-fit: cover;
+    object-position: bottom;
     height: 100%;
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
   }
 
   &::before {
@@ -70,7 +61,7 @@
   height: 100%;
   padding: 0 calc(50% - 600px);
   padding-top: 12.64%;
-  padding-bottom: 5.56%;
+  padding-bottom: 80px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -89,7 +80,7 @@
   }
 
   @include vp-767 {
-    padding: 43.44% 15px 55px;
+    padding: 43.44% 15px 37.1%;
   }
 }
 
@@ -181,9 +172,11 @@
 .main-header__button {
   width: 18.33%;
   margin-bottom: 20px;
+  margin-left: 1px;
+
   @include vp-1199 {
     width: 30.38%;
-    margin-bottom: 5px;
+    margin-bottom: 33px;
   }
 
   @include vp-767 {
@@ -193,6 +186,7 @@
 
 .main-header__features {
   display: flex;
+  margin-top: 10.83%;
 
   @include vp-1199 {
     display: none;

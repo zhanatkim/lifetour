@@ -76,4 +76,16 @@
     top: 15px;
     left: 21px;
   }
+
+  @include hover-focus{
+    outline: none;
+    border: 1px solid $color-hover-navy;
+    background-color: rgba(118, 119, 120, 0.2);
+    color: #000000;
+
+    @include active {
+      color: $color-default-white;
+      background-color: $color-hover-navy;
+    }
+  }
 }

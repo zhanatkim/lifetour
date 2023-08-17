@@ -7,7 +7,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 0 calc(50% - 600px);
+  padding: 0 calc(50% - 600px - 10px) 0 calc(50% - 600px);
   padding-top: 40px;
   z-index: 3;
 
@@ -48,13 +48,13 @@
 
   @include vp-1199 {
     // padding: 0 calc(50% - 339px);
-    padding: 0 45px;
-    padding-top: 30px;
+    padding: 30px 35px 0 45px;
+
   }
 
   @include vp-767 {
     align-items: flex-start;
-    padding: 15px 15px 0;
+    padding: 15px 10px 0 15px;
   }
 }
 
@@ -66,13 +66,11 @@
   align-items: center;
 
   @include vp-1199 {
-    width: 60.5%;
+    width: calc(100% - 30px);
   }
 
   @include vp-767 {
-    width: fit-content;
     flex-direction: column;
-    gap: 5px;
   }
 }
 
@@ -101,20 +99,33 @@
 
   @include vp-1199 {
     display: block;
+    align-self: flex-start;
+    margin-top: 10px;
+  }
+
+  @include vp-767 {
+    margin: 0;
   }
 }
 
 .page-header__logo {
   color: $color-default-white;
   transition: color $trans-default;
-  padding-right: calc(100% - 205px - 145px);
+  margin-right: calc(100% - 205px - 165px);
+
+  @include focus {
+    outline: 1px solid $color-default-white;
+    outline-offset: 3px;
+  }
 
   @include vp-1199 {
-    padding-right: calc(100% - 144px - 136px);
+    margin-right: 80px;
+    margin-left: 237px;
   }
 
   @include vp-767 {
-    padding-right: 0;
+    margin: 0;
+    margin-left: calc(100% - 118px);
   }
 
   & svg {
@@ -133,11 +144,22 @@
   }
 }
 
+.page-header__link {
+  display: flex;
+  flex-wrap: wrap;
+  @include vp-767 {
+    width: 100%;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+}
+
 .page-header__phone {
   font-size: 18px;
   font-weight: 600;
   color: $color-default-white;
   transition: color $trans-default;
+  padding: 20px 10px;
 
   @include hover-focus {
     outline: none;
@@ -155,9 +177,11 @@
 
   @include vp-1199 {
     font-size: 16px;
+    padding: 10px;
   }
 
   @include vp-767 {
     font-size: 14px;
+    padding: 5px;
   }
 }

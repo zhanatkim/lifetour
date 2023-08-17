@@ -18,6 +18,15 @@
         height: 8px;
         margin: 6px;
       }
+
+      @include hover-focus {
+        outline: none;
+        border: 1px solid $color-default-blue;
+
+        @include active {
+          background: $color-default-blue;
+        }
+      }
     }
 
     & .swiper-pagination-bullet-active {
