@@ -1,25 +1,13 @@
 .page-header {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 0 calc(50% - 600px - 10px) 0 calc(50% - 600px);
-  padding-top: 40px;
-  z-index: 3;
-
-  @include vp-1279 {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
 
   @include vp-1199 {
-    padding: 0;
-
-    &--no-js,
     &--is-active {
       & .page-header__logo,
       & .page-header__phone {
@@ -40,19 +28,29 @@
 .page-header__top {
   position: relative;
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 20px;
   justify-content: space-between;
   align-items: center;
   z-index: 3;
+  padding: 0 calc(50% - 600px - 10px) 0 calc(50% - 600px);
+  padding-top: 40px;
+
+  @include vp-1279 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 
   @include vp-1199 {
     // padding: 0 calc(50% - 339px);
     padding: 30px 35px 0 45px;
+    grid-template-columns: 26px 1fr;
 
   }
 
   @include vp-767 {
+    grid-template-columns: 26px 1fr;
     align-items: flex-start;
     padding: 15px 10px 0 15px;
   }
@@ -60,17 +58,18 @@
 
 .page-header__inner {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 205px 1fr 164px;
   justify-content: space-between;
-  align-items: center;
+  // align-items: center;
 
   @include vp-1199 {
-    width: calc(100% - 30px);
+    grid-template-columns: 1fr 164px;
   }
 
   @include vp-767 {
     flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -111,7 +110,7 @@
 .page-header__logo {
   color: $color-default-white;
   transition: color $trans-default;
-  margin-right: calc(100% - 205px - 165px);
+  // margin-right: calc(100% - 205px - 165px);
 
   @include focus {
     outline: 1px solid $color-default-white;
@@ -119,8 +118,10 @@
   }
 
   @include vp-1199 {
-    margin-right: 80px;
-    margin-left: 237px;
+    position: relative;
+    // margin-right: 80px;
+    margin-left: 221px;
+    z-index: 2;
   }
 
   @include vp-767 {
@@ -147,6 +148,8 @@
 .page-header__link {
   display: flex;
   flex-wrap: wrap;
+  justify-self: flex-end;
+
   @include vp-767 {
     width: 100%;
     align-items: flex-end;
@@ -159,7 +162,7 @@
   font-weight: 600;
   color: $color-default-white;
   transition: color $trans-default;
-  padding: 20px 10px;
+  padding: 25px 10px 20px;
 
   @include hover-focus {
     outline: none;
@@ -176,12 +179,46 @@
 
 
   @include vp-1199 {
+    position: relative;
+    z-index: 2;
     font-size: 16px;
     padding: 10px;
+    padding-top: 15px;
   }
 
   @include vp-767 {
     font-size: 14px;
     padding: 5px;
+  }
+}
+
+
+.page-header__bg-photo {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+
+  & img {
+    object-fit: cover;
+    object-position: bottom;
+    height: 100%;
+    width: 100%;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(143deg, rgba(15, 20, 41, 0.33) 0%, transparent 100%);
+  }
+
+  &--active {
+    display: block;
   }
 }
