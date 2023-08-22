@@ -77,7 +77,7 @@
     left: 21px;
   }
 
-  @include hover-focus{
+  @include hover-focus {
     outline: none;
     border: 1px solid $color-hover-navy;
     background-color: rgba(118, 119, 120, 0.2);

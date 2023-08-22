@@ -13,9 +13,7 @@
       & .page-header__phone {
         color: $color-default-black;
       }
-    }
 
-    &--is-active {
       & .page-header__top {
         position: fixed;
         background-color: $color-default-white;
@@ -46,7 +44,6 @@
     // padding: 0 calc(50% - 339px);
     padding: 30px 35px 0 45px;
     grid-template-columns: 26px 1fr;
-
   }
 
   @include vp-767 {
